@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +7,147 @@
     <!-- <script src="index.js" defer></script> -->
     <title>Lotus</title>
   </head>
-  <body>
+  <body class="font-sans text-white">
     <!-- Tailwind is a mobile first css framework. :) -->
+
+    <header
+      class="relative min-h-screen bg-gradient-to-r from-light-black to-transparent overflow-hidden"
+    >
+      <video class="back-video hidden xl:block" autoplay loop muted>
+        <source src="./lotusMaterial/newvideos/HeaderVideo_Desktop.mp4" />
+      </video>
+      <video class="back-video msm:hidden" autoplay loop muted>
+        <source
+          src="./lotusMaterial/newvideos/HeaderVideo_Desktop (9 by 16).mp4"
+        />
+      </video>
+      <video class="back-video hidden xl:hidden msm:block" autoplay loop muted>
+        <source
+          src="./lotusMaterial/newvideos/HeaderVideo_Desktop (1 by 1).mp4"
+        />
+      </video>
+
+      <video class="back-video-mobile sm:hidden" autoplay loop muted>
+        <source src="./lotusMaterial/newvideos/hero-video-mobile.mp4" />
+      </video>
+
+      <nav class="group md:px-36 px-24 py-1 hover:bg-black duration-200">
+        <div class="flex justify-between items-center">
+          <a
+            href="#"
+            class="text-sm font-poppins font-medium hover:text-canary-yellow"
+            >My Lotus</a
+          >
+          <a
+            href="#"
+            class="text-2xl font-montserrat font-bold tracking-wider group-hover:text-canary-yellow duration-200"
+            >LOTUS</a
+          >
+          <div>BURGer decreasing</div>
+        </div>
+      </nav>
+
+      <nav class="msm:block hidden">
+        <div class="border-t border-gray-300"></div>
+        <div
+          class="px-48 py-10 flex md:justify-normal justify-center md:gap-x-80 hover:bg-black duration-200 gap-x-48"
+        >
+          <div class="group">
+            <a href="#" class="link-bottom group-hover:text-canary-yellow"
+              >Overview</a
+            >
+            <div class="group-hover:border-b duration-100"></div>
+          </div>
+          <div class="group">
+            <a href="#" class="link-bottom group-hover:text-canary-yellow"
+              >Features</a
+            >
+            <div class="group-hover:border-b duration-100"></div>
+          </div>
+          <div class="group">
+            <a href="#" class="link-bottom group-hover:text-canary-yellow"
+              >Interior</a
+            >
+            <div class="group-hover:border-b duration-100"></div>
+          </div>
+          <div class="group">
+            <a href="#" class="link-bottom group-hover:text-canary-yellow"
+              >specs</a
+            >
+            <div class="group-hover:border-b duration-100"></div>
+          </div>
+          <div class="group">
+            <a href="#" class="link-bottom group-hover:text-canary-yellow"
+              >Order</a
+            >
+            <div class="group-hover:border-b duration-100"></div>
+          </div>
+        </div>
+      </nav>
+      <!-- left -->
+      <div class="max-w-12xl my-3xl mx-auto flex flex-col sm:px-64 px-24">
+        <div class="mb-24">
+          <p class="tracking-widest text-xl text-left text-canary-yellow mb-24">
+            LOTUS ELETRE
+          </p>
+          <p class="uppercase text-sm tracking-wider leading-9">
+            the electric hyper-suv with racecar dna
+          </p>
+          <span class="text-sm tracking-wider"
+            >Available to order from £89,500</span
+          >
+        </div>
+        <div class="w-full flex flex-col gap-y-32 md:flex-row md:gap-x-32">
+          <div
+            class="group px-32 py-16 flex gap-x-2 justify-center items-center bg-canary-yellow"
+          >
+            <a
+              href="#"
+              class="text-base font-bold text-black uppercase tracking-wide duration-300"
+            >
+              Available Cars
+            </a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="size-6 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10 duration-200"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+              />
+            </svg>
+          </div>
+          <div class="group flex gap-x-2 items-center">
+            <a
+              href="#"
+              class="group-hover:text-canary-yellow text-base font-bold uppercase tracking-wide duration-300"
+            >
+              book a test drive
+            </a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="size-6 group-hover:text-canary-yellow group-hover:translate-x-10 duration-200"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- sadj -->
   </body>
 </html>

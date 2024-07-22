@@ -3,6 +3,7 @@ module.exports = {
   theme: {
     screens: {
       sm: "480px", // Mobile Landscape
+      msm: "600px",
       md: "768px", // Tablet Portrait
       lg: "1024px", // Table Landscape
       xl: "1280px", // Desktop
@@ -17,6 +18,7 @@ module.exports = {
         10: "1rem",
         12: "1.2rem",
         16: "1.6rem",
+        24: "2.4rem",
         32: "3.2rem",
         48: "4.8rem",
         64: "6.4rem",
@@ -26,6 +28,15 @@ module.exports = {
         144: "14.4rem",
         160: "16rem",
         182: "18.2rem",
+        "3xl": "35rem",
+        "4xl": "40rem",
+        "5xl": "50rem",
+        "6xl": "60rem",
+        "7xl": "70rem",
+        "10xl": "100rem",
+        "12xl": "120rem",
+        "13xl": "130rem",
+        "14xl": "140rem",
       },
       fontSize: {
         xs: "1.2rem",
@@ -46,10 +57,16 @@ module.exports = {
       colors: {
         "rich-black": "#080A10",
         "canary-yellow": "#FFF200",
+        "light-black": "rgb(0,0,0,.2)",
       },
       fontFamily: {
-        sans: ["Montserrat", "Roboto", "sans-serif"],
-        roboto: ["Roboto"],
+        sans: ["Manrope", "Roboto", "sans-serif"],
+        montserrat: ["Montserrat"],
+      },
+      letterSpacing: {
+        wide: "0.075em",
+        wider: "0.2em",
+        widest: "0.3em",
       },
     },
   },

@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -8,4 +8,42 @@
 
 html {
   font-size: 62.5%;
+}
+
+@layer base {
+  h2 {
+    @apply text-center text-white font-medium lg:text-7xl md:text-6xl text-4xl;
+  }
+
+  h3 {
+    @apply text-center text-white font-medium lg:text-6xl md:text-5xl text-3xl;
+  }
+}
+
+@layer components {
+  .link-bottom {
+    @apply text-xs uppercase tracking-wider;
+  }
+
+  .back-video {
+    @apply absolute -z-10;
+  }
+
+  .back-video-mobile {
+    @apply absolute -z-10;
+  }
+}
+
+#hero {
+  background-image: url("./../lotusMaterial/images/hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+@media (max-width: 600px) {
+  #hero {
+    background-image: url("./../lotusMaterial/images/hero-mobile.jpg");
+    background-size: auto;
+  }
 }
