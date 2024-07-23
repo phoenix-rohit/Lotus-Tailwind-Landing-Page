@@ -33,6 +33,8 @@ module.exports = {
         "5xl": "50rem",
         "6xl": "60rem",
         "7xl": "70rem",
+        "8xl": "80rem",
+        "9xl": "90rem",
         "10xl": "100rem",
         "12xl": "120rem",
         "13xl": "130rem",
@@ -55,8 +57,7 @@ module.exports = {
         "9xl": "9.8rem",
       },
       colors: {
-        "rich-black": "#080A10",
-        "canary-yellow": "#FFF200",
+        "canary-yellow": "#FDEF00",
         "light-black": "rgb(0,0,0,.2)",
       },
       fontFamily: {

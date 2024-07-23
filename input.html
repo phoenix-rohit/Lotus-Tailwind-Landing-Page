@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <!-- <script src="index.js" defer></script> -->
+    <script src="domScript.js" defer></script>
     <title>Lotus</title>
   </head>
-  <body class="font-sans text-white">
+  <body class="font-sans text-white bg-black">
     <!-- Tailwind is a mobile first css framework. :) -->
 
     <header
-      class="relative min-h-screen bg-gradient-to-r from-light-black to-transparent overflow-hidden"
+      class="relative min-h-screen bg-gradient-to-tr from-black to-transparent overflow-hidden"
     >
       <video class="back-video hidden xl:block" autoplay loop muted>
         <source src="./lotusMaterial/newvideos/HeaderVideo_Desktop.mp4" />
@@ -31,35 +31,81 @@
         <source src="./lotusMaterial/newvideos/hero-video-mobile.mp4" />
       </video>
 
-      <nav class="group md:px-36 px-24 py-1 hover:bg-black duration-200">
+      <nav class="group px-24 lg:px-36 py-8 duration-200">
         <div class="flex justify-between items-center">
           <a
             href="#"
-            class="text-sm font-poppins font-medium hover:text-canary-yellow"
+            class="text-sm font-poppins font-medium hover:text-canary-yellow my-text-shadow"
             >My Lotus</a
           >
+
           <a
-            href="#"
-            class="text-2xl font-montserrat font-bold tracking-wider group-hover:text-canary-yellow duration-200"
+            href="https://www.lotuscars.com/en-GB/eletre"
+            target="_blank"
+            class="text-2xl font-montserrat font-bold tracking-wide group-hover:text-canary-yellow duration-200"
             >LOTUS</a
           >
-          <div>BURGer decreasing</div>
+
+          <div
+            class="text-transparent transition-all animate-bounce text-xs msm:block hidden"
+          >
+            <img
+              class="w-48 h-48"
+              src="/lotusMaterial/main-logo-removebg.png"
+            />
+          </div>
+          <button id="openBtn" class="msm:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#fff"
+              viewBox="0 0 24 24"
+              stroke-width=".1"
+              stroke="currentColor"
+              width="3.5rem"
+              height="3.5rem"
+            >
+              <path
+                d="m11 16.745c0-.414.336-.75.75-.75h9.5c.414 0 .75.336.75.75s-.336.75-.75.75h-9.5c-.414 0-.75-.336-.75-.75zm-9-5c0-.414.336-.75.75-.75h18.5c.414 0 .75.336.75.75s-.336.75-.75.75h-18.5c-.414 0-.75-.336-.75-.75zm4-5c0-.414.336-.75.75-.75h14.5c.414 0 .75.336.75.75s-.336.75-.75.75h-14.5c-.414 0-.75-.336-.75-.75z"
+                fill-rule="nonzero"
+              />
+            </svg>
+          </button>
+          <button id="closeBtn" class="msm:hidden hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="size-14"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
         </div>
       </nav>
 
       <nav class="msm:block hidden">
-        <div class="border-t border-gray-300"></div>
+        <div class="border-t border-gray-400"></div>
         <div
           class="px-48 py-10 flex md:justify-normal justify-center md:gap-x-80 hover:bg-black duration-200 gap-x-48"
         >
           <div class="group">
-            <a href="#" class="link-bottom group-hover:text-canary-yellow"
+            <a
+              href="#overview"
+              class="link-bottom group-hover:text-canary-yellow"
               >Overview</a
             >
             <div class="group-hover:border-b duration-100"></div>
           </div>
           <div class="group">
-            <a href="#" class="link-bottom group-hover:text-canary-yellow"
+            <a
+              href="#features"
+              class="link-bottom group-hover:text-canary-yellow"
               >Features</a
             >
             <div class="group-hover:border-b duration-100"></div>
@@ -84,16 +130,120 @@
           </div>
         </div>
       </nav>
+
+      <nav
+        id="toggleMenu"
+        class="absolute translate-x-full duration-1000 right-0 msm:hidden w-full p-64 bg-canary-yellow text-black"
+      >
+        <div class="flex flex-col gap-y-16">
+          <div class="group flex items-center">
+            <a href="#overview" class="menuLink link-bottom text-xl"
+              >overview</a
+            >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="size-9 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10 duration-200"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+              />
+            </svg>
+          </div>
+          <div class="group flex items-center">
+            <a href="#features" class="menuLink link-bottom text-xl"
+              >features</a
+            >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="size-9 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10 duration-200"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+              />
+            </svg>
+          </div>
+          <div class="group flex items-center">
+            <a href="#interior" class="menuLink link-bottom text-xl"
+              >interior</a
+            >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="size-9 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10 duration-200"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+              />
+            </svg>
+          </div>
+          <div class="group flex items-center">
+            <a href="#specs" class="menuLink link-bottom text-xl">specs</a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="size-9 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10 duration-200"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+              />
+            </svg>
+          </div>
+          <div class="group flex items-center">
+            <a href="#order" class="menuLink link-bottom text-xl">order</a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="size-9 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10 duration-200"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+              />
+            </svg>
+          </div>
+        </div>
+      </nav>
+
       <!-- left -->
-      <div class="max-w-12xl my-3xl mx-auto flex flex-col sm:px-64 px-24">
+      <div
+        class="max-w-14xl mt-4xl mx-auto flex flex-col items-start sm:px-64 px-24"
+      >
         <div class="mb-24">
-          <p class="tracking-widest text-xl text-left text-canary-yellow mb-24">
+          <p
+            class="my-text-shadow tracking-widest lg:text-3xl md:text-2xl text-xl text-left font-light text-canary-yellow mb-24"
+          >
             LOTUS ELETRE
           </p>
-          <p class="uppercase text-sm tracking-wider leading-9">
+          <p class="my-text-shadow uppercase text-sm tracking-wider leading-9">
             the electric hyper-suv with racecar dna
           </p>
-          <span class="text-sm tracking-wider"
+          <span class="my-text-shadow text-sm tracking-wider"
             >Available to order from £89,500</span
           >
         </div>
@@ -125,7 +275,7 @@
           <div class="group flex gap-x-2 items-center">
             <a
               href="#"
-              class="group-hover:text-canary-yellow text-base font-bold uppercase tracking-wide duration-300"
+              class="group-hover:text-canary-yellow text-base font-bold uppercase tracking-wide duration-300 my-text-shadow"
             >
               book a test drive
             </a>
@@ -148,6 +298,126 @@
       </div>
     </header>
 
-    <!-- sadj -->
+    <!-- content -->
+    <section id="overview">
+      <div
+        class="lg:max-w-5xl max-w-4xl text-center mx-auto my-128 md:px-0 px-20"
+      >
+        <div>
+          <h3 class="lg:text-4xl text-2xl mb-48 leading-snug tracking-wide">
+            LOOKS LIKE AN SUV DRIVES LIKE A LOTUS
+          </h3>
+          <p
+            class="mb-32 md:text-md sm:text-base text-sm sm:leading-snug leading-loose"
+          >
+            Assertive yet refined, the Eletre evolves classic Lotus design
+            language with advanced active aerodynamics and breakthrough driving
+            technologies.
+          </p>
+          <p class="uppercase text-base tracking-wide">
+            A THRILLING NEW FUTURE STARTS HERE.
+          </p>
+        </div>
+        <!-- <div class="">
+          <div>
+            <img src="" />
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- section -->
+    <section id="features">
+      <div
+        class="lg:max-w-13xl md:max-w-10xl text-center mx-auto my-128 lg:px-0 px-20"
+      >
+        <div class="mb-80">
+          <h2
+            class="text-canary-yellow sm:mb-24 mb-16 tracking-wide lg:text-5xl md:text-4xl text-3xl"
+          >
+            Unrivaled Performance
+          </h2>
+          <h3
+            class="leading-snug tracking-wider lg:text-xl sm:text-md text-base"
+          >
+            Experience a masterpiece of
+            <span class="text-canary-yellow">function and aerodynamics</span>
+          </h3>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2">
+          <!-- ITEM 1 -->
+          <div class="w-full sm:scale-100 scale-110">
+            <video autoplay loop muted>
+              <source src="/lotusMaterial/newvideos/800V.mp4" />
+            </video>
+          </div>
+          <div
+            class="my-16 mb-80 lg:mb-0 lg:my-0 md:px-20 px-10 flex flex-col justify-center md:gap-y-24 gap-y-10"
+          >
+            <h4 class="tracking-wide sm:text-2xl text-lg">
+              800V Arcthitecture
+            </h4>
+            <p class="sm:text-base text-xs leading-relaxed">
+              Industry-leading EV architecture can top up 400km (250 miles) of
+              range in just 20 minutes - with a maximum range of up to 600 km
+              (373 miles)*
+            </p>
+          </div>
+
+          <!-- ITEM 2 -->
+          <div
+            class="my-16 mb-80 lg:mb-0 lg:my-0 md:px-20 px-10 flex flex-col justify-center md:gap-y-24 gap-y-10"
+          >
+            <h4 class="tracking-wide sm:text-2xl text-lg">Aerodynamics</h4>
+            <p class="sm:text-base text-xs leading-relaxed">
+              The Evija-derived aerodynamics guide air over and through its body
+              for extra downforce and speed.
+            </p>
+          </div>
+          <div class="w-full sm:scale-100 lg:row-auto row-start-3 scale-110">
+            <video autoplay loop muted>
+              <source src="/lotusMaterial/newvideos/Aerodynamics.mp4" />
+            </video>
+          </div>
+
+          <!-- ITEM 3 -->
+          <div class="w-full sm:scale-100 scale-110">
+            <video autoplay loop muted>
+              <source src="/lotusMaterial/newvideos/Capacity.mp4" />
+            </video>
+          </div>
+          <div
+            class="my-16 mb-80 lg:mb-0 lg:my-0 md:px-20 px-10 flex flex-col justify-center md:gap-y-24 gap-y-10"
+          >
+            <h4 class="tracking-wide sm:text-2xl text-lg">High Capacity</h4>
+            <p class="sm:text-base text-xs leading-relaxed">
+              Enjoy enhanced charging at home or on the go with 22kW AC and
+              350kW DC capability.
+            </p>
+          </div>
+
+          <!-- ITEM 4 -->
+          <div
+            class="my-16 mb-80 lg:mb-0 lg:my-0 md:px-20 px-10 flex flex-col justify-center md:gap-y-24 gap-y-10"
+          >
+            <h4 class="tracking-wide sm:text-2xl text-lg">Charge Indicator</h4>
+            <p class="sm:text-base text-xs leading-relaxed">
+              The rear light blade glows green with charging, indicating
+              realtime battery levels.
+            </p>
+          </div>
+          <div class="w-full sm:scale-100 scale-110 lg:row-auto row-start-7">
+            <video autoplay loop muted>
+              <source src="/lotusMaterial/newvideos/Charge Indicator.mp4" />
+            </video>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section class="bg-white"></section>
   </body>
 </html>

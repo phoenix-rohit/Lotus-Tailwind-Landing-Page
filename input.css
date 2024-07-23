@@ -12,11 +12,15 @@ html {
 
 @layer base {
   h2 {
-    @apply text-center text-white font-medium lg:text-7xl md:text-6xl text-4xl;
+    @apply text-center uppercase font-light;
   }
 
   h3 {
-    @apply text-center text-white font-medium lg:text-6xl md:text-5xl text-3xl;
+    @apply text-center uppercase font-light;
+  }
+
+  h4 {
+    @apply text-center uppercase font-light;
   }
 }
 
@@ -47,3 +51,37 @@ html {
     background-size: auto;
   }
 }
+
+.my-text-shadow {
+  text-shadow: 2px 2px 1rem #000;
+}
+
+/* 
+
+// FIXME Added Animation but isnt used 
+
+@keyframes translateX {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+.animate-translateX {
+  animation: translate 1s;
+}
+
+@keyframes translate-X {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animte-translate-X {
+  animation: translate 1s;
+} */
