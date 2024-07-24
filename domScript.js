@@ -1,5 +1,4 @@
 "use strict";
-
 //      TOGGLE MENU WITH SMOOTH EFFECT
 const open = document.getElementById("openBtn");
 const close = document.getElementById("closeBtn");
@@ -26,4 +25,35 @@ menuLink.forEach((ele) => {
     menu.classList.toggle("translate-x-0");
     close.classList.toggle("hidden");
   });
+});
+
+// dfs
+// ITEMS
+const item1 = document.querySelector(".item-1");
+const item2 = document.querySelector(".item-2");
+const item3 = document.querySelector(".item-3");
+
+const btnMidLeft = document.querySelector(".btn-mid-left");
+const btnMidRight = document.querySelector(".btn-mid-right");
+
+const btnFRight = document.querySelector(".btn-f-right");
+const btnLLeft = document.querySelector(".btn-l-left");
+
+btnFRight.addEventListener("click", () => {
+  item2.classList.toggle("hidden");
+  item1.classList.toggle("hidden");
+});
+
+btnMidLeft.addEventListener("click", () => {
+  item1.classList.toggle("hidden");
+  item2.classList.toggle("hidden");
+});
+btnMidRight.addEventListener("click", () => {
+  item2.classList.toggle("hidden");
+  item3.classList.toggle("hidden");
+});
+
+btnLLeft.addEventListener("click", () => {
+  item2.classList.toggle("hidden");
+  item3.classList.toggle("hidden");
 });

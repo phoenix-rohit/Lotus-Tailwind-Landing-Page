@@ -28,6 +28,8 @@ module.exports = {
         144: "14.4rem",
         160: "16rem",
         182: "18.2rem",
+        "2xl": "30rem",
+        "2xxl": "33rem",
         "3xl": "35rem",
         "4xl": "40rem",
         "5xl": "50rem",
