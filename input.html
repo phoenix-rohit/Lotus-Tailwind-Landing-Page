@@ -10,289 +10,299 @@
   <body class="font-sans text-white bg-black">
     <!-- Tailwind is a mobile first css framework. :) -->
 
-    <header
-      class="relative min-h-screen bg-gradient-to-tr from-black to-transparent overflow-hidden"
-    >
-      <video class="back-video hidden xl:block" autoplay loop muted>
-        <source src="./lotusMaterial/newvideos/HeaderVideo_Desktop.mp4" />
-      </video>
-      <video class="back-video msm:hidden" autoplay loop muted>
-        <source
-          src="./lotusMaterial/newvideos/HeaderVideo_Desktop (9 by 16).mp4"
-        />
-      </video>
-      <video class="back-video hidden xl:hidden msm:block" autoplay loop muted>
-        <source
-          src="./lotusMaterial/newvideos/HeaderVideo_Desktop (1 by 1).mp4"
-        />
-      </video>
-
-      <video class="back-video-mobile sm:hidden" autoplay loop muted>
-        <source src="./lotusMaterial/newvideos/hero-video-mobile.mp4" />
-      </video>
-
-      <nav class="group px-24 lg:px-36 py-8 duration-200">
-        <div class="flex justify-between items-center">
-          <a
-            href="#"
-            class="text-sm font-poppins font-medium hover:text-canary-yellow my-text-shadow"
-            >My Lotus</a
-          >
-
-          <a
-            href="https://www.lotuscars.com/en-GB/eletre"
-            target="_blank"
-            class="text-2xl font-montserrat font-bold tracking-wide group-hover:text-canary-yellow duration-200"
-            >LOTUS</a
-          >
-
-          <div
-            class="text-transparent transition-all animate-bounce text-xs msm:block hidden"
-          >
-            <img
-              class="w-48 h-48"
-              src="/lotusMaterial/main-logo-removebg.png"
-            />
-          </div>
-          <button id="openBtn" class="msm:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="#fff"
-              viewBox="0 0 24 24"
-              stroke-width=".1"
-              stroke="currentColor"
-              width="3.5rem"
-              height="3.5rem"
-            >
-              <path
-                d="m11 16.745c0-.414.336-.75.75-.75h9.5c.414 0 .75.336.75.75s-.336.75-.75.75h-9.5c-.414 0-.75-.336-.75-.75zm-9-5c0-.414.336-.75.75-.75h18.5c.414 0 .75.336.75.75s-.336.75-.75.75h-18.5c-.414 0-.75-.336-.75-.75zm4-5c0-.414.336-.75.75-.75h14.5c.414 0 .75.336.75.75s-.336.75-.75.75h-14.5c-.414 0-.75-.336-.75-.75z"
-                fill-rule="nonzero"
-              />
-            </svg>
-          </button>
-          <button id="closeBtn" class="msm:hidden hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              class="size-14"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6 18 18 6M6 6l12 12"
-              />
-            </svg>
-          </button>
-        </div>
-      </nav>
-
-      <nav class="msm:block hidden">
-        <div class="border-t border-gray-400"></div>
-        <div
-          class="px-48 py-10 flex md:justify-normal justify-center md:gap-x-80 hover:bg-black duration-200 gap-x-48"
-        >
-          <div class="group">
-            <a
-              href="#overview"
-              class="link-bottom group-hover:text-canary-yellow"
-              >Overview</a
-            >
-            <div class="group-hover:border-b duration-100"></div>
-          </div>
-          <div class="group">
-            <a
-              href="#features"
-              class="link-bottom group-hover:text-canary-yellow"
-              >Features</a
-            >
-            <div class="group-hover:border-b duration-100"></div>
-          </div>
-          <div class="group">
-            <a href="#" class="link-bottom group-hover:text-canary-yellow"
-              >Interior</a
-            >
-            <div class="group-hover:border-b duration-100"></div>
-          </div>
-          <div class="group">
-            <a href="#" class="link-bottom group-hover:text-canary-yellow"
-              >specs</a
-            >
-            <div class="group-hover:border-b duration-100"></div>
-          </div>
-          <div class="group">
-            <a href="#" class="link-bottom group-hover:text-canary-yellow"
-              >Order</a
-            >
-            <div class="group-hover:border-b duration-100"></div>
-          </div>
-        </div>
-      </nav>
-
-      <nav
-        id="toggleMenu"
-        class="absolute translate-x-full duration-1000 right-0 msm:hidden w-full p-64 bg-canary-yellow text-black"
-      >
-        <div class="flex flex-col gap-y-16">
-          <div class="group flex items-center">
-            <a href="#overview" class="menuLink link-bottom text-xl"
-              >overview</a
-            >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              class="size-9 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10 duration-200"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-              />
-            </svg>
-          </div>
-          <div class="group flex items-center">
-            <a href="#features" class="menuLink link-bottom text-xl"
-              >features</a
-            >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              class="size-9 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10 duration-200"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-              />
-            </svg>
-          </div>
-          <div class="group flex items-center">
-            <a href="#interior" class="menuLink link-bottom text-xl"
-              >interior</a
-            >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              class="size-9 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10 duration-200"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-              />
-            </svg>
-          </div>
-          <div class="group flex items-center">
-            <a href="#specs" class="menuLink link-bottom text-xl">specs</a>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              class="size-9 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10 duration-200"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-              />
-            </svg>
-          </div>
-          <div class="group flex items-center">
-            <a href="#order" class="menuLink link-bottom text-xl">order</a>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              class="size-9 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10 duration-200"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-              />
-            </svg>
-          </div>
-        </div>
-      </nav>
-
-      <!-- left -->
+    <!-- hero -->
+    <header>
       <div
-        class="max-w-14xl sm:mt-4xl mt-2xxl mx-auto flex flex-col items-start sm:px-64 px-24"
+        class="relative min-h-screen bg-gradient-to-tr from-black to-transparent overflow-hidden"
       >
-        <div class="mb-24">
-          <p
-            class="my-text-shadow tracking-widest lg:text-3xl md:text-2xl text-xl text-left font-light text-canary-yellow mb-24"
-          >
-            LOTUS ELETRE
-          </p>
-          <p class="my-text-shadow uppercase text-sm tracking-wider leading-9">
-            the electric hyper-suv with racecar dna
-          </p>
-          <span class="my-text-shadow text-sm tracking-wider"
-            >Available to order from £89,500</span
-          >
-        </div>
-        <div class="w-full flex flex-col gap-y-32 md:flex-row md:gap-x-32">
-          <div
-            class="group px-32 py-16 flex gap-x-2 justify-center items-center bg-canary-yellow"
-          >
+        <video class="back-video hidden xl:block" autoplay loop muted>
+          <source src="./lotusMaterial/newvideos/HeaderVideo_Desktop.mp4" />
+        </video>
+        <video class="back-video msm:hidden" autoplay loop muted>
+          <source
+            src="./lotusMaterial/newvideos/HeaderVideo_Desktop (9 by 16).mp4"
+          />
+        </video>
+        <video
+          class="back-video hidden xl:hidden msm:block"
+          autoplay
+          loop
+          muted
+        >
+          <source
+            src="./lotusMaterial/newvideos/HeaderVideo_Desktop (1 by 1).mp4"
+          />
+        </video>
+
+        <video class="back-video-mobile sm:hidden" autoplay loop muted>
+          <source src="./lotusMaterial/newvideos/hero-video-mobile.mp4" />
+        </video>
+
+        <nav class="group px-24 lg:px-36 py-8 duration-200">
+          <div class="flex justify-between items-center">
             <a
               href="#"
-              class="text-base font-bold text-black uppercase tracking-wide duration-300"
+              class="text-sm font-poppins font-medium hover:text-canary-yellow my-text-shadow"
+              >My Lotus</a
             >
-              Available Cars
-            </a>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              class="size-6 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10 duration-200"
+
+            <a
+              href="https://www.lotuscars.com/en-GB/eletre"
+              target="_blank"
+              class="text-2xl font-montserrat font-bold tracking-wide group-hover:text-canary-yellow duration-200"
+              >LOTUS</a
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+
+            <div
+              class="text-transparent transition-all animate-bounce text-xs msm:block hidden"
+            >
+              <img
+                class="w-48 h-48"
+                src="/lotusMaterial/main-logo-removebg.png"
               />
-            </svg>
+            </div>
+            <button id="openBtn" class="msm:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#fff"
+                viewBox="0 0 24 24"
+                stroke-width=".1"
+                stroke="currentColor"
+                width="3.5rem"
+                height="3.5rem"
+              >
+                <path
+                  d="m11 16.745c0-.414.336-.75.75-.75h9.5c.414 0 .75.336.75.75s-.336.75-.75.75h-9.5c-.414 0-.75-.336-.75-.75zm-9-5c0-.414.336-.75.75-.75h18.5c.414 0 .75.336.75.75s-.336.75-.75.75h-18.5c-.414 0-.75-.336-.75-.75zm4-5c0-.414.336-.75.75-.75h14.5c.414 0 .75.336.75.75s-.336.75-.75.75h-14.5c-.414 0-.75-.336-.75-.75z"
+                  fill-rule="nonzero"
+                />
+              </svg>
+            </button>
+            <button id="closeBtn" class="msm:hidden hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="size-14"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
           </div>
-          <div class="group flex gap-x-2 items-center">
-            <a
-              href="#"
-              class="group-hover:text-canary-yellow text-base font-bold uppercase tracking-wide duration-300 my-text-shadow"
+        </nav>
+
+        <nav class="msm:block hidden">
+          <div class="border-t border-gray-400"></div>
+          <div
+            class="px-48 py-10 flex md:justify-normal justify-center md:gap-x-80 hover:bg-black duration-200 gap-x-48"
+          >
+            <div class="group">
+              <a
+                href="#overview"
+                class="link-bottom group-hover:text-canary-yellow"
+                >Overview</a
+              >
+              <div class="group-hover:border-b duration-100"></div>
+            </div>
+            <div class="group">
+              <a
+                href="#features"
+                class="link-bottom group-hover:text-canary-yellow"
+                >Features</a
+              >
+              <div class="group-hover:border-b duration-100"></div>
+            </div>
+            <div class="group">
+              <a href="#" class="link-bottom group-hover:text-canary-yellow"
+                >Interior</a
+              >
+              <div class="group-hover:border-b duration-100"></div>
+            </div>
+            <div class="group">
+              <a href="#" class="link-bottom group-hover:text-canary-yellow"
+                >specs</a
+              >
+              <div class="group-hover:border-b duration-100"></div>
+            </div>
+            <div class="group">
+              <a href="#" class="link-bottom group-hover:text-canary-yellow"
+                >Order</a
+              >
+              <div class="group-hover:border-b duration-100"></div>
+            </div>
+          </div>
+        </nav>
+
+        <nav
+          id="toggleMenu"
+          class="absolute translate-x-full duration-1000 right-0 msm:hidden w-full p-64 bg-canary-yellow text-black"
+        >
+          <div class="flex flex-col gap-y-16">
+            <div class="group flex items-center">
+              <a href="#overview" class="menuLink link-bottom text-xl"
+                >overview</a
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="size-9 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10 duration-200"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </div>
+            <div class="group flex items-center">
+              <a href="#features" class="menuLink link-bottom text-xl"
+                >features</a
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="size-9 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10 duration-200"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </div>
+            <div class="group flex items-center">
+              <a href="#interior" class="menuLink link-bottom text-xl"
+                >interior</a
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="size-9 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10 duration-200"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </div>
+            <div class="group flex items-center">
+              <a href="#specs" class="menuLink link-bottom text-xl">specs</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="size-9 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10 duration-200"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </div>
+            <div class="group flex items-center">
+              <a href="#order" class="menuLink link-bottom text-xl">order</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="size-9 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10 duration-200"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </div>
+          </div>
+        </nav>
+
+        <!-- left -->
+        <div
+          class="max-w-14xl sm:mt-4xl mt-2xxl mx-auto flex flex-col items-start sm:px-64 px-24"
+        >
+          <div class="mb-24">
+            <p
+              class="my-text-shadow tracking-widest lg:text-3xl md:text-2xl text-xl text-left font-light text-canary-yellow mb-24"
             >
-              book a test drive
-            </a>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              class="size-6 group-hover:text-canary-yellow group-hover:translate-x-10 duration-200"
+              LOTUS ELETRE
+            </p>
+            <p
+              class="my-text-shadow uppercase text-sm tracking-wider leading-9"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-              />
-            </svg>
+              the electric hyper-suv with racecar dna
+            </p>
+            <span class="my-text-shadow text-sm tracking-wider"
+              >Available to order from £89,500</span
+            >
+          </div>
+          <div class="w-full flex flex-col gap-y-32 md:flex-row md:gap-x-32">
+            <div
+              class="group px-32 py-16 flex gap-x-2 justify-center items-center bg-canary-yellow"
+            >
+              <a
+                href="#"
+                class="text-base font-bold text-black uppercase tracking-wide duration-300"
+              >
+                Available Cars
+              </a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="size-6 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10 duration-200"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </div>
+            <div class="group flex gap-x-2 items-center">
+              <a
+                href="#"
+                class="group-hover:text-canary-yellow text-base font-bold uppercase tracking-wide duration-300 my-text-shadow"
+              >
+                book a test drive
+              </a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="size-6 group-hover:text-canary-yellow group-hover:translate-x-10 duration-200"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
@@ -416,7 +426,7 @@
     <!-- slider -->
     <section id="">
       <div
-        class="lg:max-w-13xl md:max-w-10xl text-center mx-auto mb-128 lg:px-0 px-20"
+        class="lg:max-w-13xl md:max-w-10xl text-center mx-auto md:mb-128 mb-80 lg:px-0 px-20"
       >
         <div>
           <h2 class="mx-auto max-w-5xl text-center text-canary-yellow">
@@ -560,9 +570,186 @@
       </div>
     </section>
 
-    <!-- jsdf -->
-    <!-- <section>
-      <h2 class="transition-all animate-fade">dsffds</h2>
-    </section> -->
+    <!-- Available Cars -->
+    <section id="available-cars">
+      <div class="max-w-12xl mx-auto md:mb-128 mb-80 px-20">
+        <div class="md:max-w-7xl max-w-5xl mx-auto">
+          <h2 class="text-center text-canary-yellow">Available cars</h2>
+          <p class="sm:text-sm text-xs text-center leading-relaxed">
+            Discover our range of pre-configured Eletre, featuring expertly
+            selected options, configured by our product specialists. Browse the
+            collection, find your perfect match, and start driving in just 4-6
+            weeks.
+          </p>
+        </div>
+
+        <!-- Card contianer -->
+        <div
+          class="grid justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-32 gap-x-32 gap-y-32"
+        >
+          <!-- card-1 -->
+          <div class="max-w-2xl border group border-gray-400">
+            <div class="overflow-hidden">
+              <img
+                class="group-hover:scale-110 duration-200"
+                src="/lotusMaterial/images/lotus_emira.jpg"
+              />
+            </div>
+            <div class="p-10">
+              <h4
+                class="text-xl pb-24 tracking-wider text-canary-yellow text-center"
+              >
+                EMIRA
+              </h4>
+              <div class="pb-24 grid grid-cols-2 gap-y-10 justify-items-center">
+                <div class="flex flex-col justify-center items-center">
+                  <p class="text-lg text-canary-yellow">275</p>
+                  <p class="text-xs">km/h top speed</p>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                  <p class="text-lg text-canary-yellow">4.4 sec</p>
+                  <p class="text-xs">sec 0-100 km/h</p>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                  <p class="text-lg text-canary-yellow">365</p>
+                  <p class="text-xs">hp Power</p>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                  <p class="text-lg text-canary-yellow">430</p>
+                  <p class="text-xs">Nm Torque</p>
+                </div>
+              </div>
+              <div class="py-16 pl-24 flex flex-col gap-y-16">
+                <div>
+                  <p class="text-sm">
+                    Collect from your preferred Lotus Centre
+                  </p>
+                </div>
+                <div>
+                  <p class="text-sm">
+                    Available with <span class="font-bold">0% APR</span> finance
+                  </p>
+                </div>
+                <div>
+                  <p class="text-sm">Available within 6 weeks</p>
+                </div>
+              </div>
+              <div class="flex justify-between items-center">
+                <h4 class="text-xl ml-10 text-canary-yellow">£84,300</h4>
+                <a href="#" class="card-link"> view details </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-2 -->
+          <div class="max-w-2xl border group border-gray-400">
+            <div class="overflow-hidden">
+              <img
+                class="group-hover:scale-110 duration-200"
+                src="/lotusMaterial/images/lotus_evija.jpg"
+              />
+            </div>
+            <div class="p-10">
+              <h4
+                class="text-xl pb-24 tracking-wider text-canary-yellow text-center"
+              >
+                evija
+              </h4>
+              <div class="pb-24 grid grid-cols-2 gap-y-10 justify-items-center">
+                <div class="flex flex-col justify-center items-center">
+                  <p class="text-lg text-canary-yellow">350</p>
+                  <p class="text-xs">km/h top speed</p>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                  <p class="text-lg text-canary-yellow">2.9 sec</p>
+                  <p class="text-xs">sec 0-100 km/h</p>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                  <p class="text-lg text-canary-yellow">2011</p>
+                  <p class="text-xs">hp Power</p>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                  <p class="text-lg text-canary-yellow">1704</p>
+                  <p class="text-xs">Nm Torque</p>
+                </div>
+              </div>
+              <div class="py-16 pl-24 flex flex-col gap-y-16">
+                <div>
+                  <p class="text-sm">
+                    Collect from your preferred Lotus Centre
+                  </p>
+                </div>
+                <div>
+                  <p class="text-sm">
+                    Available with <span class="font-bold">0% APR</span> finance
+                  </p>
+                </div>
+                <div>
+                  <p class="text-sm">Available within 6 weeks</p>
+                </div>
+              </div>
+              <div class="flex justify-between items-center">
+                <h4 class="text-xl ml-10 text-canary-yellow">£210,000</h4>
+                <a href="#" class="card-link"> view details </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-3 -->
+          <div class="max-w-2xl border group border-gray-400">
+            <div class="overflow-hidden">
+              <img
+                class="group-hover:scale-110 duration-200"
+                src="/lotusMaterial/images/lotus_emeya.jpg"
+              />
+            </div>
+            <div class="p-10">
+              <h4
+                class="text-xl pb-24 tracking-wider text-canary-yellow text-center"
+              >
+                emeya
+              </h4>
+              <div class="pb-24 grid grid-cols-2 gap-y-10 justify-items-center">
+                <div class="flex flex-col justify-center items-center">
+                  <p class="text-lg text-canary-yellow">250</p>
+                  <p class="text-xs">km/h top speed</p>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                  <p class="text-lg text-canary-yellow">4.2 sec</p>
+                  <p class="text-xs">sec 0-100 km/h</p>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                  <p class="text-lg text-canary-yellow">603</p>
+                  <p class="text-xs">hp Power</p>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                  <p class="text-lg text-canary-yellow">710</p>
+                  <p class="text-xs">Nm Torque</p>
+                </div>
+              </div>
+              <div class="py-16 pl-24 flex flex-col gap-y-16">
+                <div>
+                  <p class="text-sm">
+                    Collect from your preferred Lotus Centre
+                  </p>
+                </div>
+                <div>
+                  <p class="text-sm">
+                    Available with <span class="font-bold">0% APR</span> finance
+                  </p>
+                </div>
+                <div>
+                  <p class="text-sm">Available within 6 weeks</p>
+                </div>
+              </div>
+              <div class="flex justify-between items-center">
+                <h4 class="text-xl ml-10 text-canary-yellow">£89,550</h4>
+                <a href="#" class="card-link"> view details </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

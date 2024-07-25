@@ -20,7 +20,7 @@ html {
   }
 
   h4 {
-    @apply text-center uppercase font-light;
+    @apply uppercase font-light;
   }
 }
 
@@ -39,6 +39,10 @@ html {
 
   .active {
     @apply block !important;
+  }
+
+  .card-link {
+    @apply hover:bg-canary-yellow hover:text-black duration-200 hover:font-semibold hover:-translate-y-1 hover:translate-x-1 border border-canary-yellow px-24 py-10 uppercase text-base;
   }
 }
 
