@@ -38,10 +38,11 @@
           <source src="./lotusMaterial/newvideos/hero-video-mobile.mp4" />
         </video>
 
+        <!-- TOP BAR MENUs -->
         <nav class="group px-24 lg:px-36 py-8 duration-200">
           <div class="flex justify-between items-center">
             <a
-              href="#"
+              href="/signUp.html"
               class="text-sm font-poppins font-medium hover:text-canary-yellow my-text-shadow"
               >My Lotus</a
             >
@@ -96,6 +97,7 @@
           </div>
         </nav>
 
+        <!-- Defualt Menu -->
         <nav class="msm:block hidden">
           <div class="border-t border-gray-400"></div>
           <div
@@ -138,6 +140,7 @@
           </div>
         </nav>
 
+        <!-- Mobile Menu -->
         <nav
           id="toggleMenu"
           class="absolute translate-x-full duration-1000 right-0 msm:hidden w-full p-64 bg-canary-yellow text-black"
@@ -237,7 +240,7 @@
           </div>
         </nav>
 
-        <!-- left -->
+        <!-- HERO TEXT -->
         <div
           class="max-w-14xl sm:mt-4xl mt-2xxl mx-auto flex flex-col items-start sm:px-64 px-24"
         >
@@ -257,51 +260,52 @@
             >
           </div>
           <div class="w-full flex flex-col gap-y-32 md:flex-row md:gap-x-32">
-            <div
-              class="group px-32 py-16 flex gap-x-2 justify-center items-center bg-canary-yellow"
+            <a
+              href="#available-cars"
+              class="px-32 py-16 bg-canary-yellow group flex gap-x-2 justify-center items-center text-base font-bold text-black uppercase tracking-wide duration-300"
             >
+              Available Cars
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="size-6 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10 duration-200"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </span>
+            </a>
+
+            <div class="flex gap-x-2 items-center">
               <a
                 href="#"
-                class="text-base font-bold text-black uppercase tracking-wide duration-300"
-              >
-                Available Cars
-              </a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="currentColor"
-                class="size-6 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10 duration-200"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                />
-              </svg>
-            </div>
-            <div class="group flex gap-x-2 items-center">
-              <a
-                href="#"
-                class="group-hover:text-canary-yellow text-base font-bold uppercase tracking-wide duration-300 my-text-shadow"
+                class="group flex gap-x-2 items-center hover:text-canary-yellow text-base font-bold uppercase tracking-wide duration-300 my-text-shadow"
               >
                 book a test drive
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="size-6 group-hover:text-canary-yellow group-hover:translate-x-10 duration-200"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </span>
               </a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="currentColor"
-                class="size-6 group-hover:text-canary-yellow group-hover:translate-x-10 duration-200"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                />
-              </svg>
             </div>
           </div>
         </div>
