@@ -48,8 +48,6 @@
             >
 
             <a
-              href="https://www.lotuscars.com/en-GB/eletre"
-              target="_blank"
               class="text-2xl font-montserrat font-bold tracking-wide group-hover:text-canary-yellow duration-200"
               >LOTUS</a
             >
@@ -128,12 +126,6 @@
             <div class="group">
               <a href="#" class="link-bottom group-hover:text-canary-yellow"
                 >specs</a
-              >
-              <div class="group-hover:border-b duration-100"></div>
-            </div>
-            <div class="group">
-              <a href="#" class="link-bottom group-hover:text-canary-yellow"
-                >Order</a
               >
               <div class="group-hover:border-b duration-100"></div>
             </div>
@@ -220,23 +212,6 @@
                 />
               </svg>
             </div>
-            <div class="group flex items-center">
-              <a href="#order" class="menuLink link-bottom text-xl">order</a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="currentColor"
-                class="size-9 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10 duration-200"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                />
-              </svg>
-            </div>
           </div>
         </nav>
 
@@ -285,7 +260,7 @@
 
             <div class="flex gap-x-2 items-center">
               <a
-                href="#"
+                href="/signUp.html"
                 class="group flex gap-x-2 items-center hover:text-canary-yellow text-base font-bold uppercase tracking-wide duration-300 my-text-shadow"
               >
                 book a test drive
@@ -441,7 +416,7 @@
           <div class="item item-1 hidden">
             <div class="w-full mb-48 relative">
               <video autoplay loop muted>
-                <source src="/lotusMaterial/newvideos/carved_wing.mp4" />
+                <source src="/lotusMaterial/newvideos/spoiler.mp4" />
               </video>
               <div
                 class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-48 lg:translate-x-96 group right-chev"
@@ -467,17 +442,20 @@
             <div
               class="my-16 mb-48 lg:mb-0 lg:my-0 md:px-20 px-10 flex flex-col justify-center md:gap-y-24 gap-y-10"
             >
-              <h4 class="tracking-wide sm:text-2xl text-lg">WING SPOILERS</h4>
+              <h4 class="tracking-wide sm:text-2xl text-lg">
+                deployable spoiler
+              </h4>
               <p class="sm:text-base text-xs leading-relaxed">
-                Two curved blades direct air over the rear window to connect
-                with the deployable spoiler.
+                The rear spoiler deploys when driven at high speed, and it can
+                generate up to 112.5 kg(5) of downforce for improved road
+                handling.
               </p>
             </div>
           </div>
           <div class="item item-2">
             <div class="w-full mb-48 relative">
               <video autoplay loop muted>
-                <source src="/lotusMaterial/newvideos/spoiler.mp4" />
+                <source src="/lotusMaterial/newvideos/carved_wing.mp4" />
               </video>
               <div
                 class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-48 lg:-translate-x-96 group left-chev"
@@ -524,13 +502,10 @@
             <div
               class="my-16 mb-48 lg:mb-0 lg:my-0 md:px-20 px-10 flex flex-col justify-center md:gap-y-24 gap-y-10"
             >
-              <h4 class="tracking-wide sm:text-2xl text-lg">
-                deployable spoiler
-              </h4>
+              <h4 class="tracking-wide sm:text-2xl text-lg">WING SPOILERS</h4>
               <p class="sm:text-base text-xs leading-relaxed">
-                The rear spoiler deploys when driven at high speed, and it can
-                generate up to 112.5 kg(5) of downforce for improved road
-                handling.
+                Two curved blades direct air over the rear window to connect
+                with the deployable spoiler.
               </p>
             </div>
           </div>
@@ -623,24 +598,73 @@
                   <p class="text-xs">Nm Torque</p>
                 </div>
               </div>
-              <div class="py-16 pl-24 flex flex-col gap-y-16">
+              <div class="py-16 flex flex-col gap-y-16">
                 <div>
-                  <p class="text-sm">
+                  <p class="text-sm flex items-center gap-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-7 stroke-canary-yellow"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                      />
+                    </svg>
                     Collect from your preferred Lotus Centre
                   </p>
                 </div>
                 <div>
-                  <p class="text-sm">
-                    Available with <span class="font-bold">0% APR</span> finance
+                  <p class="text-sm flex items-center gap-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-7 stroke-canary-yellow"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
+                      />
+                    </svg>
+                    Available within 6 weeks
                   </p>
                 </div>
                 <div>
-                  <p class="text-sm">Available within 6 weeks</p>
+                  <p class="text-sm flex items-center gap-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-7 stroke-canary-yellow"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M14.25 7.756a4.5 4.5 0 1 0 0 8.488M7.5 10.5h5.25m-5.25 3h5.25M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                      />
+                    </svg>
+                    Available with <span class="font-bold">0% APR</span> finance
+                  </p>
                 </div>
               </div>
               <div class="flex justify-between items-center">
                 <h4 class="text-xl ml-10 text-canary-yellow">£84,300</h4>
-                <a href="#" class="card-link"> view details </a>
+                <a href="/emira.html" class="card-link"> view details </a>
               </div>
             </div>
           </div>
@@ -677,24 +701,73 @@
                   <p class="text-xs">Nm Torque</p>
                 </div>
               </div>
-              <div class="py-16 pl-24 flex flex-col gap-y-16">
+              <div class="py-16 flex flex-col gap-y-16">
                 <div>
-                  <p class="text-sm">
+                  <p class="text-sm flex items-center gap-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-7 stroke-canary-yellow"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                      />
+                    </svg>
                     Collect from your preferred Lotus Centre
                   </p>
                 </div>
                 <div>
-                  <p class="text-sm">
-                    Available with <span class="font-bold">0% APR</span> finance
+                  <p class="text-sm flex items-center gap-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-7 stroke-canary-yellow"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
+                      />
+                    </svg>
+                    Available within 6 weeks
                   </p>
                 </div>
                 <div>
-                  <p class="text-sm">Available within 6 weeks</p>
+                  <p class="text-sm flex items-center gap-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-7 stroke-canary-yellow"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M14.25 7.756a4.5 4.5 0 1 0 0 8.488M7.5 10.5h5.25m-5.25 3h5.25M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                      />
+                    </svg>
+                    Available with <span class="font-bold">0% APR</span> finance
+                  </p>
                 </div>
               </div>
               <div class="flex justify-between items-center">
                 <h4 class="text-xl ml-10 text-canary-yellow">£210,000</h4>
-                <a href="#" class="card-link"> view details </a>
+                <a href="/evija.html" class="card-link"> view details </a>
               </div>
             </div>
           </div>
@@ -731,24 +804,73 @@
                   <p class="text-xs">Nm Torque</p>
                 </div>
               </div>
-              <div class="py-16 pl-24 flex flex-col gap-y-16">
+              <div class="py-16 flex flex-col gap-y-16">
                 <div>
-                  <p class="text-sm">
+                  <p class="text-sm flex items-center gap-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-7 stroke-canary-yellow"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                      />
+                    </svg>
                     Collect from your preferred Lotus Centre
                   </p>
                 </div>
                 <div>
-                  <p class="text-sm">
-                    Available with <span class="font-bold">0% APR</span> finance
+                  <p class="text-sm flex items-center gap-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-7 stroke-canary-yellow"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
+                      />
+                    </svg>
+                    Available within 6 weeks
                   </p>
                 </div>
                 <div>
-                  <p class="text-sm">Available within 6 weeks</p>
+                  <p class="text-sm flex items-center gap-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-7 stroke-canary-yellow"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M14.25 7.756a4.5 4.5 0 1 0 0 8.488M7.5 10.5h5.25m-5.25 3h5.25M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                      />
+                    </svg>
+                    Available with <span class="font-bold">0% APR</span> finance
+                  </p>
                 </div>
               </div>
               <div class="flex justify-between items-center">
                 <h4 class="text-xl ml-10 text-canary-yellow">£89,550</h4>
-                <a href="#" class="card-link"> view details </a>
+                <a href="/emeya.html" class="card-link"> view details </a>
               </div>
             </div>
           </div>
@@ -758,5 +880,10 @@
 
     <!-- dsaf -->
     <section></section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="mx-auto"></div>
+    </footer>
   </body>
 </html>

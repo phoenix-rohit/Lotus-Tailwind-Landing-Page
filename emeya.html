@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image"
+      href="/lotusMaterial/main-logo-removebg.png"
+    />
+    <script src="carScript.js" defer></script>
+    <title>EMEYA | Lotus</title>
+  </head>
+  <body>
+    <div class="w-full flex lg:flex-row flex-col">
+      <!-- TEXT CONTAINER -->
+      <div class="px-24 py-16 lg:w-1/2">
+        <!-- LOGO -->
+        <div class="flex gap-10 msm:mb-80 mb-48">
+          <a
+            class="text-2xl font-extrabold tracking-wide hover:text-canary-yellow duration-200"
+            >LOTUS</a
+          >
+          <div class="animate-bounce bg-black rounded-full">
+            <img
+              class="w-48 h-48 scale-105"
+              src="/lotusMaterial/main-logo-removebg.png"
+            />
+          </div>
+        </div>
+
+        <!-- HEADING  -->
+        <h2 class="text-left msm:text-4xl text-3xl font-medium mb-32">EMEYA</h2>
+        <!-- SPEC CONTAINER -->
+        <div
+          class="grid xl:grid-cols-4 lg:grid-cols-2 msm:grid-cols-4 grid-cols-2 gap-y-32 gap-x-32"
+        >
+          <div>
+            <p class="text-xs font-medium font-montserrat">Colour</p>
+            <div class="flex items-center gap-10">
+              <p class="text-lg font-medium">Canary</p>
+              <div class="rounded-full w-24 h-24 bg-[#FFE900]"></div>
+            </div>
+          </div>
+          <div>
+            <p class="text-xs font-medium font-montserrat">Interior</p>
+            <p class="text-lg font-medium">Nappa</p>
+          </div>
+          <div>
+            <p class="text-xs font-medium font-montserrat">Power</p>
+            <p class="text-lg font-medium">603 kW</p>
+          </div>
+          <div class="">
+            <p class="text-xs font-medium font-montserrat">0-62 mph</p>
+            <p class="text-lg font-medium">4.2 sec</p>
+          </div>
+        </div>
+
+        <!-- LIST -->
+        <ul class="my-32 font-medium">
+          <li class="mb-16 flex items-center gap-10">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+              class="size-7"
+            >
+              <path
+                d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"
+              ></path>
+            </svg>
+            <span class="text-sm"
+              >Collect from your preferred Lotus Centre</span
+            >
+          </li>
+
+          <li class="mb-16 flex items-center gap-10">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+              class="size-7"
+            >
+              <path
+                d="M192,208a8,8,0,0,1-8,8H56a8,8,0,0,1,0-16h4a28,28,0,0,0,28-28V136H56a8,8,0,0,1,0-16H88V84a52,52,0,0,1,85.08-40.12A8,8,0,1,1,162.9,56.22,36,36,0,0,0,104,84v36h32a8,8,0,0,1,0,16H104v36a43.82,43.82,0,0,1-10.08,28H184A8,8,0,0,1,192,208Z"
+              ></path>
+            </svg>
+            <span class="text-sm"
+              >Available with
+              <span class="font-semibold">0% APR</span> finance</span
+            >
+          </li>
+          <li class="mb-16 flex items-center gap-10">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+              class="size-7"
+            >
+              <path
+                d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Z"
+              ></path>
+            </svg>
+            <span class="text-sm">Available within 6 weeks</span>
+          </li>
+        </ul>
+
+        <!-- BORDER -->
+        <div class="my-32 border-b border-gray-400"></div>
+        <div class="btn-rotate"></div>
+
+        <!-- FULL SPEC CONTAINER -->
+        <div class="">
+          <h4 class="text-2xl md:text-xl font-normal mb-16">
+            Full specification
+          </h4>
+          <!-- 1st -->
+          <div class="">
+            <div class="flex justify-between">
+              <h4 class="font-normal text-base">Exterior</h4>
+              <button id="first-spec-chev-down" class="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div id="first-chev" class="hidden my-10">
+              <div class="flex justify-between mb-10">
+                <p class="text-sm font-bold">Exterior colours</p>
+                <p class="text-sm font-bold">Canary</p>
+              </div>
+              <div class="flex justify-between mb-10">
+                <p class="text-sm font-bold">Wheels</p>
+                <p class="text-sm font-bold">23" Multi-spoke Gloss Black</p>
+              </div>
+              <div class="flex justify-between mb-10">
+                <p class="text-sm font-bold">Tyres</p>
+                <p class="text-sm font-bold">Pirelli P-Zero tyres</p>
+              </div>
+              <div class="flex justify-between mb-10">
+                <p class="text-sm font-bold">Brakes and calipers</p>
+                <p class="text-sm font-bold">
+                  Lightweight brake discs with 6-piston calipers (Red)
+                </p>
+              </div>
+            </div>
+            <div class="my-10 border-b border-gray-400"></div>
+          </div>
+          <!-- 2nd -->
+          <div class="">
+            <div class="flex justify-between">
+              <h4 class="font-normal text-base">Interior</h4>
+              <button id="second-spec-chev-down">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div id="second-chev" class="hidden my-10">
+              <div class="flex justify-between mb-10">
+                <p class="text-sm font-bold">Interior theme</p>
+                <p class="text-sm font-bold">Quartz</p>
+              </div>
+              <div class="flex justify-between mb-10">
+                <p class="text-sm font-bold">Seating</p>
+                <p class="text-sm font-bold">Comfort Seat pack</p>
+              </div>
+              <div class="flex justify-between mb-10">
+                <p class="text-sm font-bold">Interior material</p>
+                <p class="text-sm font-bold">Nappa leathers</p>
+              </div>
+              <div class="flex justify-between mb-10">
+                <p class="text-sm font-bold">Steering wheel</p>
+                <p class="text-sm font-bold">
+                  Dark Grey leather with dark steel Blue accents
+                </p>
+              </div>
+            </div>
+            <div class="my-10 border-b border-gray-400"></div>
+          </div>
+          <!-- 3rd -->
+          <div class="">
+            <div class="flex justify-between">
+              <h4 class="font-normal text-base">Driving AIDs</h4>
+              <button id="third-spec-chev-down">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div id="third-chev" class="hidden my-10">
+              <div class="flex justify-between mb-10">
+                <p class="text-sm font-bold">Parking pack</p>
+                <p class="text-sm font-bold">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                    class="size-7"
+                  >
+                    <path
+                      d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
+                    ></path>
+                  </svg>
+                </p>
+              </div>
+              <div class="flex justify-between mb-10">
+                <p class="text-sm font-bold">High Assist pack</p>
+                <p class="text-sm font-bold">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                    class="size-7"
+                  >
+                    <path
+                      d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
+                    ></path>
+                  </svg>
+                </p>
+              </div>
+            </div>
+            <div class="my-10 border-b border-gray-400"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- VIDEO -->
+      <div class="bg-black lg:min-h-screen lg:flex lg:items-center">
+        <div class="lg:hidden">
+          <video autoplay loop muted>
+            <source src="/lotusMaterial/newvideos/lotus_emeya.mp4" />
+          </video>
+        </div>
+        <div class="relative lg:block hidden">
+          <!-- <img src="/lotusMaterial/images/lotus_emira(1 by 1).jpg" /> -->
+
+          <video autoplay loop muted>
+            <source src="/lotusMaterial/newvideos/lotus_emeya(1 by 1).mp4" />
+          </video>
+          <div
+            class="lg:block hidden z-10 px-16 py-10 min-w-full bg-black text-white sticky bottom-0"
+          >
+            <div class="flex justify-between items-center">
+              <div>
+                <p class="text-sm">Price</p>
+                <p
+                  class="font-montserrat tracking-wide text-2xl text-canary-yellow"
+                >
+                  £89,550
+                </p>
+                <p class="text-sm">Incl. VAT</p>
+              </div>
+              <div>
+                <a href="/signUp.html" class="card-link"> Reserve Now </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- sticky -->
+      <div
+        class="lg:hidden z-10 px-16 py-10 min-w-full bg-black text-white sticky bottom-0"
+      >
+        <div class="flex justify-between items-center">
+          <div>
+            <p class="text-sm">Price</p>
+            <p
+              class="font-montserrat tracking-wide text-2xl text-canary-yellow"
+            >
+              £89,550
+            </p>
+            <p class="text-sm">Incl. VAT</p>
+          </div>
+          <div>
+            <a href="/signUp.html" class="card-link"> Reserve Now </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

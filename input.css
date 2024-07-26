@@ -42,7 +42,11 @@ html {
   }
 
   .card-link {
-    @apply hover:bg-canary-yellow hover:text-black duration-200 hover:font-semibold hover:-translate-y-1 hover:translate-x-1 border border-canary-yellow px-16 lg:px-16 sm:px-24 py-10 uppercase sm:text-base text-sm;
+    @apply bg-canary-yellow text-black hover:bg-black hover:text-canary-yellow duration-200 hover:font-semibold hover:-translate-y-1 hover:translate-x-1 border border-canary-yellow px-16 lg:px-16 sm:px-24 py-10 uppercase sm:text-base text-sm;
+  }
+
+  .btn-rotate {
+    @apply transition-all duration-200 -rotate-180;
   }
 }
 
@@ -91,3 +95,9 @@ html {
   animation: transFromRight 1s;
 }
 */
+
+/* .btn-rotate {
+  transition-property: all;
+  transform: rotate(180);
+  transition-duration: 200ms;
+} */

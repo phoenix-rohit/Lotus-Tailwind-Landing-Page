@@ -8,19 +8,15 @@
   </head>
   <body>
     <section>
-      <div class="z-10 sticky top-0">
+      <div class="z-10 lg:static sticky">
         <div
           class="bg-black text-white flex items-center justify-center gap-x-10 py-10 group"
         >
           <a
-            href="https://www.lotuscars.com/en-GB/eletre"
-            target="_blank"
             class="text-2xl font-montserrat font-bold tracking-wide group-hover:text-canary-yellow duration-200"
             >LOTUS</a
           >
-          <div
-            class="text-transparent transition-all animate-pulse text-xs msm:block hidden"
-          >
+          <div class="animate-pulse text-xs">
             <img
               class="w-48 h-48"
               src="/lotusMaterial/main-logo-removebg.png"
@@ -30,7 +26,7 @@
       </div>
       <div class="flex flex-col items-center justify-center lg:flex-row">
         <!-- 1st part -->
-        <div class="max-w-6xl mx-auto p-64 order-1">
+        <div class="max-w-6xl mx-auto px-64 lg:py-10 py-64 order-1">
           <!-- Main page link -->
           <div>
             <a
@@ -55,11 +51,31 @@
             >
           </div>
 
-          <!-- Sign In container -->
-          <div class="flex flex-col my-48 gap-y-24">
+          <!-- ORDERS  -->
+          <div class="flex flex-col my-48">
             <h3 class="text-left text-2xl font-medium my-10">
-              SIGN IN TO MY LOTUS
+              eletre & emira orders
             </h3>
+            <p class="text-base text-gray-400 font-light">
+              If you've placed an order for a
+              <span class="font-semibold">Lotus Emira</span> or
+              <span class="font-semibold">Lotus Eletre</span>, please use this
+              log in link to access your order details and account information.
+            </p>
+            <button
+              class="text-base border-4 border-canary-yellow uppercase bg-canary-yellow p-10 rounded-sm hover:bg-black hover:text-canary-yellow duration-300 hover:tracking-wide font-semibold my-24"
+            >
+              log in for eletre & emira orders
+            </button>
+          </div>
+
+          <!-- Border -->
+
+          <div class="my-24 border-b border-gray-300"></div>
+
+          <!-- SIGN IN -->
+          <div class="flex flex-col mt-48 gap-y-24">
+            <h3 class="text-left text-2xl font-medium">SIGN IN TO MY LOTUS</h3>
             <p class="text-base text-gray-400 font-light">
               Log in here if you have an
               <span class="font-semibold">Emeya reservation </span>or if you
@@ -83,27 +99,10 @@
           </div>
 
           <!-- Border -->
-
-          <div class="my-24 border-b border-gray-300"></div>
-
-          <!-- Order -->
-          <div class="flex flex-col my-48">
-            <h3 class="text-left text-2xl font-medium my-10">
-              eletre & emira orders
-            </h3>
-            <p class="text-base text-gray-400 font-light">
-              If you've placed an order for a
-              <span class="font-semibold">Lotus Emira</span> or
-              <span class="font-semibold">Lotus Eletre</span>, please use this
-              log in link to access your order details and account information.
-            </p>
-          </div>
-
-          <!-- Border -->
           <div class="mt-32 border-b border-gray-300"></div>
         </div>
         <!-- 2nd part (image) -->
-        <div class="overflow-hidden w-full lg:order-2">
+        <div class="w-full lg:order-2">
           <img src="/lotusMaterial/images/sign_up.jpg" />
         </div>
       </div>
