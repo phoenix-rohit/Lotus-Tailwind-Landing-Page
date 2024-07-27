@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image"
+      href="/lotusMaterial/main-logo-removebg.png"
+    />
+    <script src="carScript.js" defer></script>
+    <title>Login | Lotus</title>
+  </head>
+  <body>
+    <div class="z-10 sticky top-0">
+      <div
+        class="bg-black text-white flex items-center justify-center gap-x-10 py-10 group"
+      >
+        <a
+          class="text-2xl font-montserrat font-bold tracking-wide group-hover:text-canary-yellow duration-200"
+          >LOTUS</a
+        >
+        <div class="animate-pulse text-xs">
+          <img class="w-48 h-48" src="/lotusMaterial/main-logo-removebg.png" />
+        </div>
+      </div>
+    </div>
+    <div class="w-full flex lg:flex-row flex-col">
+      <!-- TEXT CONTAINER -->
+      <div
+        class="lg:min-h-screen mx-auto xl:px-80 lg:px-48 md:px-144 px-64 md:py-10 py-64 lg:w-1/2 order-1"
+      >
+        <!-- Main page link -->
+        <div>
+          <a
+            href="/input.html"
+            class="flex items-center gap-x-10 uppercase text-xs tracking-wider font-semibold"
+          >
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                /></svg></span
+            >back to lotus</a
+          >
+        </div>
+
+        <!-- ORDERS  -->
+        <div class="flex flex-col my-48">
+          <h3 class="text-left lg:text-2xl text-xl font-medium my-10">
+            eletre & emira orders
+          </h3>
+          <p class="lg:text-base text-sm text-gray-400 font-light">
+            If you've placed an order for a
+            <span class="font-semibold">Lotus Emira</span> or
+            <span class="font-semibold">Lotus Eletre</span>, please use this log
+            in link to access your order details and account information.
+          </p>
+          <button
+            class="lg:text-base text-sm border-4 border-canary-yellow uppercase bg-canary-yellow p-10 rounded-sm hover:bg-black hover:text-canary-yellow duration-300 hover:tracking-wide font-semibold my-24"
+          >
+            log in to order
+          </button>
+        </div>
+
+        <!-- BORDER -->
+        <div class="my-32 border-b border-gray-400"></div>
+
+        <!-- SIGN IN -->
+        <div class="flex flex-col my-48 gap-y-24">
+          <h3 class="text-left lg:text-2xl text-xl font-medium">
+            SIGN IN TO MY LOTUS
+          </h3>
+          <p class="lg:text-base text-sm text-gray-400 font-light">
+            Log in here if you have an
+            <span class="font-semibold">Emeya reservation </span>or if you
+            placed an order in the
+            <span class="font-semibold">Clothing & Lifestyle webshop.</span>
+          </p>
+          <input
+            type="email"
+            name=""
+            id="email"
+            placeholder="Email (e.g. youremail@domain.co.uk)"
+            class="border border-gray-400 focus:outline-none placeholder:text-sm placeholder:text-gray-300 font-medium p-16 text-sm rounded-sm"
+          />
+          <button
+            class="lg:text-base text-sm border-4 border-canary-yellow uppercase tracking-wide bg-canary-yellow p-10 rounded-sm hover:bg-black hover:text-canary-yellow duration-300 hover:tracking-widest font-semibold my-24"
+            type="submit"
+            id="email"
+          >
+            Send
+          </button>
+        </div>
+
+        <!-- BORDER -->
+        <div class="my-32 border-b border-gray-400"></div>
+
+        <!-- CUstomer support -->
+        <div class="my-48">
+          <p class="mb-16 text-md font-bold">We are here to help</p>
+          <p class="text-sm">
+            If you have any questions, please reach out to customer support or
+            read our frequently asked questions.
+          </p>
+
+          <div class="my-32">
+            <a class="flex gap-10 items-center">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                  class="size-7"
+                >
+                  <path
+                    d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="font-bold text-base">Customer support</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- VIDEO -->
+      <div class="bg-black lg:min-h-screen md:flex md:items-center lg:order-2">
+        <div class="relative lg:hidden">
+          <video autoplay loop muted>
+            <source src="/lotusMaterial/newvideos/sign_up.mp4" />
+          </video>
+          <div
+            class="z-10 px-16 py-10 min-w-full bg-black text-white sticky bottom-0"
+          >
+            <div class="flex justify-between items-center">
+              <div>
+                <p class="text-sm">Price</p>
+                <p
+                  class="font-montserrat tracking-wide text-2xl text-canary-yellow"
+                >
+                  £124,800
+                </p>
+                <p class="text-sm">Incl. VAT</p>
+              </div>
+              <div>
+                <a
+                  href="https://www.lotuscars.com/en-GB"
+                  class="card-link"
+                  target="_blank"
+                >
+                  Reserve Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative lg:block hidden">
+          <video autoplay loop muted>
+            <source src="/lotusMaterial/newvideos/sign_up(the_goat).mp4" />
+          </video>
+          <div
+            class="z-10 px-16 py-10 min-w-full bg-black text-white sticky bottom-0"
+          >
+            <div class="flex justify-between items-center">
+              <div>
+                <p class="text-sm">Price</p>
+                <p
+                  class="font-montserrat tracking-wide text-2xl text-canary-yellow"
+                >
+                  £124,800
+                </p>
+                <p class="text-sm">Incl. VAT</p>
+              </div>
+              <div>
+                <a
+                  href="https://www.lotuscars.com/en-GB"
+                  class="card-link"
+                  target="_blank"
+                >
+                  Reserve Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -57,3 +57,27 @@ btnLLeft.addEventListener("click", () => {
   item2.classList.toggle("hidden");
   item3.classList.toggle("hidden");
 });
+
+// Cokkie
+const acceptCookieButton = document.getElementById("btn-accept-cookie");
+const rejectCookieButton = document.getElementById("btn-reject-cookie");
+const openCookieButton = document.getElementById("open-cookies");
+
+const cokkieContainer = document.getElementById("cookie-container");
+const termsContainer = document.getElementById("terms-container");
+const btnTerms = document.getElementById("btn-terms");
+
+acceptCookieButton.addEventListener("click", () => {
+  cokkieContainer.classList.add("hidden");
+});
+rejectCookieButton.addEventListener("click", () => {
+  cokkieContainer.classList.add("hidden");
+});
+
+openCookieButton.addEventListener("click", () => {
+  cokkieContainer.classList.toggle("hidden");
+});
+
+btnTerms.addEventListener("click", () => {
+  termsContainer.classList.toggle("hidden");
+});

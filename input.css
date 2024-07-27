@@ -22,6 +22,10 @@ html {
   h4 {
     @apply uppercase font-light;
   }
+
+  h5 {
+    @apply uppercase font-medium lg:text-xl text-md mb-10 text-canary-yellow tracking-wide;
+  }
 }
 
 @layer components {
