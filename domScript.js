@@ -81,3 +81,7 @@ openCookieButton.addEventListener("click", () => {
 btnTerms.addEventListener("click", () => {
   termsContainer.classList.toggle("hidden");
 });
+
+setTimeout(() => {
+  cokkieContainer.classList.add("hidden");
+}, 4000);

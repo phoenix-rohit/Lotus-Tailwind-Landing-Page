@@ -718,8 +718,16 @@ h5{
   bottom: 1rem;
 }
 
+.bottom-\[1\.6rem\]{
+  bottom: 1.6rem;
+}
+
 .left-0{
   left: 0px;
+}
+
+.left-1\/4{
+  left: 25%;
 }
 
 .right-0{
@@ -769,11 +777,6 @@ h5{
   margin-bottom: 1rem;
 }
 
-.my-128{
-  margin-top: 12.8rem;
-  margin-bottom: 12.8rem;
-}
-
 .my-16{
   margin-top: 1.6rem;
   margin-bottom: 1.6rem;
@@ -801,6 +804,10 @@ h5{
 
 .mb-10{
   margin-bottom: 1rem;
+}
+
+.mb-128{
+  margin-bottom: 12.8rem;
 }
 
 .mb-16{
@@ -911,6 +918,10 @@ h5{
   max-width: 120rem;
 }
 
+.max-w-13xl{
+  max-width: 130rem;
+}
+
 .max-w-14xl{
   max-width: 140rem;
 }
@@ -935,6 +946,16 @@ h5{
   max-width: 80rem;
 }
 
+.-translate-x-1\/4{
+  --tw-translate-x: -25%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-10{
+  --tw-translate-x: -1rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .-translate-x-48{
   --tw-translate-x: -4.8rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -942,6 +963,11 @@ h5{
 
 .-translate-y-1\/2{
   --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-10{
+  --tw-translate-y: -1rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1437,6 +1463,10 @@ h5{
   transition-duration: 1000ms;
 }
 
+.duration-150{
+  transition-duration: 150ms;
+}
+
 .duration-200{
   transition-duration: 200ms;
 }
@@ -1455,6 +1485,13 @@ html {
 
 #hero {
   background-image: url("./../lotusMaterial/images/hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+#updatedBG {
+  background-image: url("./../lotusMaterial/images/updated.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
@@ -1521,6 +1558,16 @@ html {
 .placeholder\:text-gray-300::placeholder{
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.hover\:translate-x-0:hover{
+  --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:translate-y-0:hover{
+  --tw-translate-y: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @keyframes pulse{
@@ -1661,6 +1708,10 @@ html {
 }
 
 @media (min-width: 600px){
+  .msm\:bottom-\[10\%\]{
+    bottom: 10%;
+  }
+
   .msm\:mb-32{
     margin-bottom: 3.2rem;
   }
@@ -1679,6 +1730,10 @@ html {
 
   .msm\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .msm\:flex-row{
+    flex-direction: row;
   }
 
   .msm\:text-4xl{

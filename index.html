@@ -129,7 +129,9 @@
               <div class="group-hover:border-b duration-100"></div>
             </div>
             <div class="group">
-              <a href="#" class="link-bottom group-hover:text-canary-yellow"
+              <a
+                href="#available-cars"
+                class="link-bottom group-hover:text-canary-yellow"
                 >specs</a
               >
               <div class="group-hover:border-b duration-100"></div>
@@ -201,7 +203,9 @@
               </svg>
             </div>
             <div class="group flex items-center">
-              <a href="#specs" class="menuLink link-bottom text-xl">specs</a>
+              <a href="#available-cars" class="menuLink link-bottom text-xl"
+                >specs</a
+              >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -295,7 +299,7 @@
     <!-- overview -->
     <section id="overview">
       <div
-        class="lg:max-w-5xl max-w-4xl text-center mx-auto my-128 md:px-0 px-20"
+        class="my-64 lg:max-w-5xl max-w-4xl text-center mx-auto mb-128 md:px-0 px-20"
       >
         <div>
           <h2 class="lg:text-4xl text-2xl mb-48 leading-snug tracking-wide">
@@ -572,310 +576,331 @@
           class="grid justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-32 gap-x-32 gap-y-32"
         >
           <!-- card-1 -->
-          <div class="max-w-2xl border group border-gray-400">
-            <div class="overflow-hidden">
-              <img
-                class="group-hover:scale-110 group-hover:animate-pulse duration-200"
-                src="/lotusMaterial/images/lotus_emira.jpg"
-              />
-            </div>
-            <div class="p-10">
-              <h4
-                class="text-xl pb-24 tracking-wider text-canary-yellow text-center"
-              >
-                EMIRA
-              </h4>
-              <div class="pb-24 grid grid-cols-2 gap-y-10 justify-items-center">
-                <div class="flex flex-col justify-center items-center">
-                  <p class="text-lg text-canary-yellow">275</p>
-                  <p class="text-xs">km/h top speed</p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <p class="text-lg text-canary-yellow">4.4 sec</p>
-                  <p class="text-xs">sec 0-100 km/h</p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <p class="text-lg text-canary-yellow">365</p>
-                  <p class="text-xs">hp Power</p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <p class="text-lg text-canary-yellow">430</p>
-                  <p class="text-xs">Nm Torque</p>
-                </div>
+          <div class="bg-canary-yellow">
+            <div
+              class="-translate-x-10 -translate-y-10 hover:translate-x-0 hover:translate-y-0 duration-150 max-w-2xl border group border-canary-yellow bg-black"
+            >
+              <div class="overflow-hidden">
+                <img
+                  class="group-hover:scale-110 group-hover:animate-pulse duration-200"
+                  src="/lotusMaterial/images/lotus_emira.jpg"
+                />
               </div>
-              <div class="py-16 flex flex-col gap-y-16">
-                <div>
-                  <p class="text-sm flex items-center gap-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-7 stroke-canary-yellow"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-                      />
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
-                      />
-                    </svg>
-                    Collect from your preferred Lotus Centre
-                  </p>
+              <div class="p-10">
+                <h4
+                  class="text-xl pb-24 tracking-wider text-canary-yellow text-center"
+                >
+                  EMIRA
+                </h4>
+                <div
+                  class="pb-24 grid grid-cols-2 gap-y-10 justify-items-center"
+                >
+                  <div class="flex flex-col justify-center items-center">
+                    <p class="text-lg text-canary-yellow">275</p>
+                    <p class="text-xs">km/h top speed</p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <p class="text-lg text-canary-yellow">4.4 sec</p>
+                    <p class="text-xs">sec 0-100 km/h</p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <p class="text-lg text-canary-yellow">365</p>
+                    <p class="text-xs">hp Power</p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <p class="text-lg text-canary-yellow">430</p>
+                    <p class="text-xs">Nm Torque</p>
+                  </div>
                 </div>
-                <div>
-                  <p class="text-sm flex items-center gap-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-7 stroke-canary-yellow"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
-                      />
-                    </svg>
-                    Available within 6 weeks
-                  </p>
+                <div class="py-16 flex flex-col gap-y-16">
+                  <div>
+                    <p class="text-sm flex items-center gap-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-7 stroke-canary-yellow"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                        />
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                        />
+                      </svg>
+                      Collect from your preferred Lotus Centre
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-sm flex items-center gap-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-7 stroke-canary-yellow"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
+                        />
+                      </svg>
+                      Available within 6 weeks
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-sm flex items-center gap-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-7 stroke-canary-yellow"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M14.25 7.756a4.5 4.5 0 1 0 0 8.488M7.5 10.5h5.25m-5.25 3h5.25M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                        />
+                      </svg>
+                      Available with
+                      <span class="font-bold">0% APR</span> finance
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <p class="text-sm flex items-center gap-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-7 stroke-canary-yellow"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M14.25 7.756a4.5 4.5 0 1 0 0 8.488M7.5 10.5h5.25m-5.25 3h5.25M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-                      />
-                    </svg>
-                    Available with <span class="font-bold">0% APR</span> finance
-                  </p>
+                <div class="flex justify-between items-center">
+                  <h4 class="text-xl ml-10 text-canary-yellow">£84,300</h4>
+                  <a href="/emira.html" class="card-link"> view details </a>
                 </div>
-              </div>
-              <div class="flex justify-between items-center">
-                <h4 class="text-xl ml-10 text-canary-yellow">£84,300</h4>
-                <a href="/emira.html" class="card-link"> view details </a>
               </div>
             </div>
           </div>
 
           <!-- card-2 -->
-          <div class="max-w-2xl border group border-gray-400">
-            <div class="overflow-hidden">
-              <img
-                class="group-hover:scale-110 group-hover:animate-pulse duration-200"
-                src="/lotusMaterial/images/lotus_evija.jpg"
-              />
-            </div>
-            <div class="p-10">
-              <h4
-                class="text-xl pb-24 tracking-wider text-canary-yellow text-center"
-              >
-                evija
-              </h4>
-              <div class="pb-24 grid grid-cols-2 gap-y-10 justify-items-center">
-                <div class="flex flex-col justify-center items-center">
-                  <p class="text-lg text-canary-yellow">350</p>
-                  <p class="text-xs">km/h top speed</p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <p class="text-lg text-canary-yellow">2.9 sec</p>
-                  <p class="text-xs">sec 0-100 km/h</p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <p class="text-lg text-canary-yellow">2011</p>
-                  <p class="text-xs">hp Power</p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <p class="text-lg text-canary-yellow">1704</p>
-                  <p class="text-xs">Nm Torque</p>
-                </div>
+          <div class="bg-canary-yellow">
+            <div
+              class="-translate-x-10 -translate-y-10 hover:translate-x-0 hover:translate-y-0 duration-150 max-w-2xl border group border-canary-yellow bg-black"
+            >
+              <div class="overflow-hidden">
+                <img
+                  class="group-hover:scale-110 group-hover:animate-pulse duration-200"
+                  src="/lotusMaterial/images/lotus_evija.jpg"
+                />
               </div>
-              <div class="py-16 flex flex-col gap-y-16">
-                <div>
-                  <p class="text-sm flex items-center gap-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-7 stroke-canary-yellow"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-                      />
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
-                      />
-                    </svg>
-                    Collect from your preferred Lotus Centre
-                  </p>
+              <div class="p-10">
+                <h4
+                  class="text-xl pb-24 tracking-wider text-canary-yellow text-center"
+                >
+                  evija
+                </h4>
+                <div
+                  class="pb-24 grid grid-cols-2 gap-y-10 justify-items-center"
+                >
+                  <div class="flex flex-col justify-center items-center">
+                    <p class="text-lg text-canary-yellow">350</p>
+                    <p class="text-xs">km/h top speed</p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <p class="text-lg text-canary-yellow">2.9 sec</p>
+                    <p class="text-xs">sec 0-100 km/h</p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <p class="text-lg text-canary-yellow">2011</p>
+                    <p class="text-xs">hp Power</p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <p class="text-lg text-canary-yellow">1704</p>
+                    <p class="text-xs">Nm Torque</p>
+                  </div>
                 </div>
-                <div>
-                  <p class="text-sm flex items-center gap-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-7 stroke-canary-yellow"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
-                      />
-                    </svg>
-                    Available within 6 weeks
-                  </p>
+                <div class="py-16 flex flex-col gap-y-16">
+                  <div>
+                    <p class="text-sm flex items-center gap-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-7 stroke-canary-yellow"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                        />
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                        />
+                      </svg>
+                      Collect from your preferred Lotus Centre
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-sm flex items-center gap-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-7 stroke-canary-yellow"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
+                        />
+                      </svg>
+                      Available within 6 weeks
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-sm flex items-center gap-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-7 stroke-canary-yellow"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M14.25 7.756a4.5 4.5 0 1 0 0 8.488M7.5 10.5h5.25m-5.25 3h5.25M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                        />
+                      </svg>
+                      Available with
+                      <span class="font-bold">0% APR</span> finance
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <p class="text-sm flex items-center gap-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-7 stroke-canary-yellow"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M14.25 7.756a4.5 4.5 0 1 0 0 8.488M7.5 10.5h5.25m-5.25 3h5.25M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-                      />
-                    </svg>
-                    Available with <span class="font-bold">0% APR</span> finance
-                  </p>
+                <div class="flex justify-between items-center">
+                  <h4 class="text-xl ml-10 text-canary-yellow">£210,000</h4>
+                  <a href="/evija.html" class="card-link"> view details </a>
                 </div>
-              </div>
-              <div class="flex justify-between items-center">
-                <h4 class="text-xl ml-10 text-canary-yellow">£210,000</h4>
-                <a href="/evija.html" class="card-link"> view details </a>
               </div>
             </div>
           </div>
 
           <!-- card-3 -->
-          <div class="max-w-2xl border group border-gray-400">
-            <div class="overflow-hidden">
-              <img
-                class="group-hover:scale-110 group-hover:animate-pulse duration-200"
-                src="/lotusMaterial/images/lotus_emeya.jpg"
-              />
-            </div>
-            <div class="p-10">
-              <h4
-                class="text-xl pb-24 tracking-wider text-canary-yellow text-center"
-              >
-                emeya
-              </h4>
-              <div class="pb-24 grid grid-cols-2 gap-y-10 justify-items-center">
-                <div class="flex flex-col justify-center items-center">
-                  <p class="text-lg text-canary-yellow">250</p>
-                  <p class="text-xs">km/h top speed</p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <p class="text-lg text-canary-yellow">4.2 sec</p>
-                  <p class="text-xs">sec 0-100 km/h</p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <p class="text-lg text-canary-yellow">603</p>
-                  <p class="text-xs">hp Power</p>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                  <p class="text-lg text-canary-yellow">710</p>
-                  <p class="text-xs">Nm Torque</p>
-                </div>
+          <div class="bg-canary-yellow">
+            <div
+              class="-translate-x-10 -translate-y-10 hover:translate-x-0 hover:translate-y-0 duration-150 max-w-2xl border group border-canary-yellow bg-black"
+            >
+              <div class="overflow-hidden">
+                <img
+                  class="group-hover:scale-110 group-hover:animate-pulse duration-200"
+                  src="/lotusMaterial/images/lotus_emeya.jpg"
+                />
               </div>
-              <div class="py-16 flex flex-col gap-y-16">
-                <div>
-                  <p class="text-sm flex items-center gap-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-7 stroke-canary-yellow"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-                      />
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
-                      />
-                    </svg>
-                    Collect from your preferred Lotus Centre
-                  </p>
+              <div class="p-10">
+                <h4
+                  class="text-xl pb-24 tracking-wider text-canary-yellow text-center"
+                >
+                  emeya
+                </h4>
+                <div
+                  class="pb-24 grid grid-cols-2 gap-y-10 justify-items-center"
+                >
+                  <div class="flex flex-col justify-center items-center">
+                    <p class="text-lg text-canary-yellow">250</p>
+                    <p class="text-xs">km/h top speed</p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <p class="text-lg text-canary-yellow">4.2 sec</p>
+                    <p class="text-xs">sec 0-100 km/h</p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <p class="text-lg text-canary-yellow">603</p>
+                    <p class="text-xs">hp Power</p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <p class="text-lg text-canary-yellow">710</p>
+                    <p class="text-xs">Nm Torque</p>
+                  </div>
                 </div>
-                <div>
-                  <p class="text-sm flex items-center gap-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-7 stroke-canary-yellow"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
-                      />
-                    </svg>
-                    Available within 6 weeks
-                  </p>
+                <div class="py-16 flex flex-col gap-y-16">
+                  <div>
+                    <p class="text-sm flex items-center gap-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-7 stroke-canary-yellow"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                        />
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                        />
+                      </svg>
+                      Collect from your preferred Lotus Centre
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-sm flex items-center gap-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-7 stroke-canary-yellow"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
+                        />
+                      </svg>
+                      Available within 6 weeks
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-sm flex items-center gap-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-7 stroke-canary-yellow"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M14.25 7.756a4.5 4.5 0 1 0 0 8.488M7.5 10.5h5.25m-5.25 3h5.25M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                        />
+                      </svg>
+                      Available with
+                      <span class="font-bold">0% APR</span> finance
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <p class="text-sm flex items-center gap-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-7 stroke-canary-yellow"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M14.25 7.756a4.5 4.5 0 1 0 0 8.488M7.5 10.5h5.25m-5.25 3h5.25M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-                      />
-                    </svg>
-                    Available with <span class="font-bold">0% APR</span> finance
-                  </p>
+                <div class="flex justify-between items-center">
+                  <h4 class="text-xl ml-10 text-canary-yellow">£89,550</h4>
+                  <a href="/emeya.html" class="card-link"> view details </a>
                 </div>
-              </div>
-              <div class="flex justify-between items-center">
-                <h4 class="text-xl ml-10 text-canary-yellow">£89,550</h4>
-                <a href="/emeya.html" class="card-link"> view details </a>
               </div>
             </div>
           </div>
@@ -883,8 +908,70 @@
       </div>
     </section>
 
-    <!-- dsaf -->
-    <section></section>
+    <!-- INTERIOR -->
+    <section id="updatedBG">
+      <div class="relative mb-32 max-w-13xl min-h-screen mx-auto">
+        <div
+          class="absolute bottom-[1.6rem] msm:bottom-[10%] left-1/4 -translate-x-1/4"
+        >
+          <h2 class="text-left">BE AMONG FIRST TO OWN</h2>
+          <div class="w-full flex gap-y-32 flex-col msm:flex-row gap-x-32">
+            <a
+              href="/sign_in.html"
+              class="px-32 py-16 bg-canary-yellow group flex gap-x-2 justify-center items-center text-base font-bold text-black uppercase tracking-wide duration-300"
+            >
+              Order yours
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="size-6 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10 duration-200"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </span>
+            </a>
+
+            <div class="flex gap-x-2 items-center">
+              <a
+                href="/sign_in.html"
+                class="group flex gap-x-2 items-center hover:text-canary-yellow text-base font-bold uppercase tracking-wide duration-300 my-text-shadow"
+              >
+                keep me updated
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="size-6 group-hover:text-canary-yellow group-hover:translate-x-10 duration-200"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+          <p class="my-16 text-base">
+            Order now to be one of the first to experience our all-electric
+            hyper-SUV. * Exact spectification subject to availability,
+            confirmation and terms and conditons.
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer>
@@ -1129,7 +1216,7 @@
     <!-- Cookie Container -->
     <div
       id="cookie-container"
-      class="sticky shadow-xl bottom-10 max-w-4xl bg-white mx-auto p-16"
+      class="sticky hidden shadow-xl bottom-10 max-w-4xl bg-white mx-auto p-16"
     >
       <div class="mx-10 lg:mx-0">
         <div class="flex lg:flex-row justify-between flex-col">

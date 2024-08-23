@@ -61,6 +61,13 @@ html {
   background-size: auto;
 }
 
+#updatedBG {
+  background-image: url("./../lotusMaterial/images/updated.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
 @media (max-width: 600px) {
   #hero {
     background-image: url("./../lotusMaterial/images/hero-mobile.jpg");
