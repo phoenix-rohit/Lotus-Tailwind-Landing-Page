@@ -1809,10 +1809,6 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 8rem;
   }
 
-  .md\:block{
-    display: block;
-  }
-
   .md\:flex{
     display: flex;
   }

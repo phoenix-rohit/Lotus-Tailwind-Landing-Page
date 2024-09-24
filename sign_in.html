@@ -13,29 +13,29 @@
     <title>Login | Lotus</title>
   </head>
   <body>
-    <div class="z-10 sticky top-0">
+    <div class="sticky top-0 z-10">
       <div
-        class="bg-black text-white flex items-center justify-center gap-x-10 py-10 group"
+        class="flex items-center justify-center py-10 text-white bg-black gap-x-10 group"
       >
         <a
-          class="text-2xl font-montserrat font-bold tracking-wide group-hover:text-canary-yellow duration-200"
+          class="text-2xl font-bold tracking-wide duration-200 font-montserrat group-hover:text-canary-yellow"
           >LOTUS</a
         >
-        <div class="animate-pulse text-xs">
+        <div class="text-xs animate-pulse">
           <img class="w-48 h-48" src="/lotusMaterial/main-logo-removebg.png" />
         </div>
       </div>
     </div>
-    <div class="w-full flex lg:flex-row flex-col">
+    <div class="flex flex-col w-full lg:flex-row">
       <!-- TEXT CONTAINER -->
       <div
-        class="lg:min-h-screen mx-auto xl:px-80 lg:px-48 md:px-144 px-64 md:py-10 py-64 lg:w-1/2 order-1"
+        class="order-1 px-64 py-64 mx-auto lg:min-h-screen xl:px-80 lg:px-48 md:px-144 md:py-10 lg:w-1/2"
       >
         <!-- Main page link -->
         <div>
           <a
-            href="/input.html"
-            class="flex items-center gap-x-10 uppercase text-xs tracking-wider font-semibold"
+            href="/"
+            class="flex items-center text-xs font-semibold tracking-wider uppercase gap-x-10"
           >
             <span
               ><svg
@@ -57,17 +57,17 @@
 
         <!-- ORDERS  -->
         <div class="flex flex-col my-48">
-          <h3 class="text-left lg:text-2xl text-xl font-medium my-10">
+          <h3 class="my-10 text-xl font-medium text-left lg:text-2xl">
             eletre & emira orders
           </h3>
-          <p class="lg:text-base text-sm text-gray-400 font-light">
+          <p class="text-sm font-light text-gray-400 lg:text-base">
             If you've placed an order for a
             <span class="font-semibold">Lotus Emira</span> or
             <span class="font-semibold">Lotus Eletre</span>, please use this log
             in link to access your order details and account information.
           </p>
           <button
-            class="lg:text-base text-sm border-4 border-canary-yellow uppercase bg-canary-yellow p-10 rounded-sm hover:bg-black hover:text-canary-yellow duration-300 hover:tracking-wide font-semibold my-24"
+            class="p-10 my-24 text-sm font-semibold uppercase duration-300 border-4 rounded-sm lg:text-base border-canary-yellow bg-canary-yellow hover:bg-black hover:text-canary-yellow hover:tracking-wide"
           >
             log in to order
           </button>
@@ -78,10 +78,10 @@
 
         <!-- SIGN IN -->
         <div class="flex flex-col my-48 gap-y-24">
-          <h3 class="text-left lg:text-2xl text-xl font-medium">
+          <h3 class="text-xl font-medium text-left lg:text-2xl">
             SIGN IN TO MY LOTUS
           </h3>
-          <p class="lg:text-base text-sm text-gray-400 font-light">
+          <p class="text-sm font-light text-gray-400 lg:text-base">
             Log in here if you have an
             <span class="font-semibold">Emeya reservation </span>or if you
             placed an order in the
@@ -92,10 +92,10 @@
             name=""
             id="email"
             placeholder="Email (e.g. youremail@domain.co.uk)"
-            class="border border-gray-400 focus:outline-none placeholder:text-sm placeholder:text-gray-300 font-medium p-16 text-sm rounded-sm"
+            class="p-16 text-sm font-medium border border-gray-400 rounded-sm focus:outline-none placeholder:text-sm placeholder:text-gray-300"
           />
           <button
-            class="lg:text-base text-sm border-4 border-canary-yellow uppercase tracking-wide bg-canary-yellow p-10 rounded-sm hover:bg-black hover:text-canary-yellow duration-300 hover:tracking-widest font-semibold my-24"
+            class="p-10 my-24 text-sm font-semibold tracking-wide uppercase duration-300 border-4 rounded-sm lg:text-base border-canary-yellow bg-canary-yellow hover:bg-black hover:text-canary-yellow hover:tracking-widest"
             type="submit"
             id="email"
           >
@@ -108,14 +108,14 @@
 
         <!-- CUstomer support -->
         <div class="my-48">
-          <p class="mb-16 text-md font-bold">We are here to help</p>
+          <p class="mb-16 font-bold text-md">We are here to help</p>
           <p class="text-sm">
             If you have any questions, please reach out to customer support or
             read our frequently asked questions.
           </p>
 
           <div class="my-32">
-            <a class="flex gap-10 items-center">
+            <a class="flex items-center gap-10">
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -130,7 +130,7 @@
                   ></path>
                 </svg>
               </span>
-              <span class="font-bold text-base">Customer support</span>
+              <span class="text-base font-bold">Customer support</span>
             </a>
           </div>
         </div>
@@ -143,13 +143,13 @@
             <source src="/lotusMaterial/newvideos/sign_up.mp4" />
           </video>
           <div
-            class="z-10 px-16 py-10 min-w-full bg-black text-white sticky bottom-0"
+            class="sticky bottom-0 z-10 min-w-full px-16 py-10 text-white bg-black"
           >
-            <div class="flex justify-between items-center">
+            <div class="flex items-center justify-between">
               <div>
                 <p class="text-sm">Price</p>
                 <p
-                  class="font-montserrat tracking-wide text-2xl text-canary-yellow"
+                  class="text-2xl tracking-wide font-montserrat text-canary-yellow"
                 >
                   £124,800
                 </p>
@@ -167,18 +167,18 @@
             </div>
           </div>
         </div>
-        <div class="relative lg:block hidden">
+        <div class="relative hidden lg:block">
           <video autoplay loop muted>
             <source src="/lotusMaterial/newvideos/sign_up(the_goat).mp4" />
           </video>
           <div
-            class="z-10 px-16 py-10 min-w-full bg-black text-white sticky bottom-0"
+            class="sticky bottom-0 z-10 min-w-full px-16 py-10 text-white bg-black"
           >
-            <div class="flex justify-between items-center">
+            <div class="flex items-center justify-between">
               <div>
                 <p class="text-sm">Price</p>
                 <p
-                  class="font-montserrat tracking-wide text-2xl text-canary-yellow"
+                  class="text-2xl tracking-wide font-montserrat text-canary-yellow"
                 >
                   £124,800
                 </p>
