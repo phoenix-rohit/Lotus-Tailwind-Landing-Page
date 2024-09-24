@@ -79,6 +79,25 @@ html {
   text-shadow: 2px 2px 1rem #000;
 }
 
+.floating {
+  animation-name: floating;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, -15px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
+}
+
 /*
 @keyframes translateInX {
   0% {
@@ -112,3 +131,16 @@ html {
   transform: rotate(180);
   transition-duration: 200ms;
 } */
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fdef00;
+  border: 3px solid black;
+}

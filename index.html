@@ -18,9 +18,9 @@
     <!-- hero -->
     <header>
       <div
-        class="relative min-h-screen bg-gradient-to-tr from-black to-transparent overflow-hidden"
+        class="relative min-h-screen overflow-hidden bg-gradient-to-tr from-black to-transparent"
       >
-        <video class="back-video hidden xl:block" autoplay loop muted>
+        <video class="hidden back-video xl:block" autoplay loop muted>
           <source src="./lotusMaterial/newvideos/HeaderVideo_Desktop.mp4" />
         </video>
         <video class="back-video msm:hidden" autoplay loop muted>
@@ -29,7 +29,7 @@
           />
         </video>
         <video
-          class="back-video hidden xl:hidden msm:block"
+          class="hidden back-video xl:hidden msm:block"
           autoplay
           loop
           muted
@@ -44,21 +44,21 @@
         </video>
 
         <!-- TOP BAR MENUs -->
-        <nav class="group px-24 lg:px-36 py-8 duration-200">
-          <div class="flex justify-between items-center">
+        <nav class="px-24 py-8 duration-200 group lg:px-36">
+          <div class="flex items-center justify-between">
             <a
               href="/sign_in.html"
-              class="text-sm font-poppins font-medium hover:text-canary-yellow my-text-shadow"
+              class="text-sm font-medium font-poppins hover:text-canary-yellow my-text-shadow"
               >My Lotus</a
             >
 
             <a
-              class="text-2xl font-montserrat font-bold tracking-wide group-hover:text-canary-yellow duration-200"
+              class="text-2xl font-bold tracking-wide duration-200 font-montserrat group-hover:text-canary-yellow"
               >LOTUS</a
             >
 
             <div
-              class="text-transparent transition-all animate-bounce text-xs msm:block hidden"
+              class="hidden text-xs text-transparent transition-all animate-bounce msm:block"
             >
               <img
                 class="w-48 h-48"
@@ -81,7 +81,7 @@
                 />
               </svg>
             </button>
-            <button id="closeBtn" class="msm:hidden hidden">
+            <button id="closeBtn" class="hidden msm:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -101,10 +101,10 @@
         </nav>
 
         <!-- Defualt Menu -->
-        <nav class="msm:block hidden">
+        <nav class="hidden msm:block">
           <div class="border-t border-gray-400"></div>
           <div
-            class="px-48 py-10 flex md:justify-normal justify-center md:gap-x-80 hover:bg-black duration-200 gap-x-48"
+            class="flex justify-center px-48 py-10 duration-200 md:justify-normal md:gap-x-80 hover:bg-black gap-x-48"
           >
             <div class="group">
               <a
@@ -112,7 +112,7 @@
                 class="link-bottom group-hover:text-canary-yellow"
                 >Overview</a
               >
-              <div class="group-hover:border-b duration-100"></div>
+              <div class="duration-100 group-hover:border-b"></div>
             </div>
             <div class="group">
               <a
@@ -120,13 +120,15 @@
                 class="link-bottom group-hover:text-canary-yellow"
                 >Features</a
               >
-              <div class="group-hover:border-b duration-100"></div>
+              <div class="duration-100 group-hover:border-b"></div>
             </div>
             <div class="group">
-              <a href="#" class="link-bottom group-hover:text-canary-yellow"
-                >Interior</a
+              <a
+                href="#aerodynamics"
+                class="link-bottom group-hover:text-canary-yellow"
+                >Aerodynamics</a
               >
-              <div class="group-hover:border-b duration-100"></div>
+              <div class="duration-100 group-hover:border-b"></div>
             </div>
             <div class="group">
               <a
@@ -134,7 +136,7 @@
                 class="link-bottom group-hover:text-canary-yellow"
                 >specs</a
               >
-              <div class="group-hover:border-b duration-100"></div>
+              <div class="duration-100 group-hover:border-b"></div>
             </div>
           </div>
         </nav>
@@ -142,11 +144,11 @@
         <!-- Mobile Menu -->
         <nav
           id="toggleMenu"
-          class="absolute translate-x-full duration-1000 right-0 msm:hidden w-full p-64 bg-canary-yellow text-black"
+          class="absolute right-0 w-full p-64 text-black duration-1000 translate-x-full msm:hidden bg-canary-yellow"
         >
           <div class="flex flex-col gap-y-16">
-            <div class="group flex items-center">
-              <a href="#overview" class="menuLink link-bottom text-xl"
+            <div class="flex items-center group">
+              <a href="#overview" class="text-xl menuLink link-bottom"
                 >overview</a
               >
               <svg
@@ -155,7 +157,7 @@
                 viewBox="0 0 24 24"
                 stroke-width="2"
                 stroke="currentColor"
-                class="size-9 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10 duration-200"
+                class="duration-200 size-9 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10"
               >
                 <path
                   stroke-linecap="round"
@@ -164,8 +166,8 @@
                 />
               </svg>
             </div>
-            <div class="group flex items-center">
-              <a href="#features" class="menuLink link-bottom text-xl"
+            <div class="flex items-center group">
+              <a href="#features" class="text-xl menuLink link-bottom"
                 >features</a
               >
               <svg
@@ -174,7 +176,7 @@
                 viewBox="0 0 24 24"
                 stroke-width="2"
                 stroke="currentColor"
-                class="size-9 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10 duration-200"
+                class="duration-200 size-9 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10"
               >
                 <path
                   stroke-linecap="round"
@@ -183,9 +185,9 @@
                 />
               </svg>
             </div>
-            <div class="group flex items-center">
-              <a href="#interior" class="menuLink link-bottom text-xl"
-                >interior</a
+            <div class="flex items-center group">
+              <a href="#aerodynamics" class="text-xl menuLink link-bottom"
+                >aerodynamics</a
               >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -193,7 +195,7 @@
                 viewBox="0 0 24 24"
                 stroke-width="2"
                 stroke="currentColor"
-                class="size-9 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10 duration-200"
+                class="duration-200 size-9 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10"
               >
                 <path
                   stroke-linecap="round"
@@ -202,8 +204,8 @@
                 />
               </svg>
             </div>
-            <div class="group flex items-center">
-              <a href="#available-cars" class="menuLink link-bottom text-xl"
+            <div class="flex items-center group">
+              <a href="#available-cars" class="text-xl menuLink link-bottom"
                 >specs</a
               >
               <svg
@@ -212,7 +214,7 @@
                 viewBox="0 0 24 24"
                 stroke-width="2"
                 stroke="currentColor"
-                class="size-9 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10 duration-200"
+                class="duration-200 size-9 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10"
               >
                 <path
                   stroke-linecap="round"
@@ -226,27 +228,27 @@
 
         <!-- HERO TEXT -->
         <div
-          class="max-w-14xl sm:mt-4xl mt-2xxl mx-auto flex flex-col items-start sm:px-64 px-24"
+          class="flex flex-col items-start px-24 mx-auto max-w-14xl sm:mt-4xl mt-2xxl sm:px-64"
         >
           <div class="mb-24">
             <p
-              class="my-text-shadow tracking-widest lg:text-3xl md:text-2xl text-xl text-left font-light text-canary-yellow mb-24"
+              class="mb-24 text-xl font-light tracking-widest text-left my-text-shadow lg:text-3xl md:text-2xl text-canary-yellow"
             >
               LOTUS ELETRE
             </p>
             <p
-              class="my-text-shadow uppercase text-sm tracking-wider leading-9"
+              class="text-sm leading-9 tracking-wider uppercase my-text-shadow"
             >
               the electric hyper-suv with racecar dna
             </p>
-            <span class="my-text-shadow text-sm tracking-wider"
+            <span class="text-sm tracking-wider my-text-shadow"
               >Available to order from £89,500</span
             >
           </div>
-          <div class="w-full flex flex-col gap-y-32 md:flex-row md:gap-x-32">
+          <div class="flex flex-col w-full gap-y-32 md:flex-row md:gap-x-32">
             <a
               href="#available-cars"
-              class="px-32 py-16 bg-canary-yellow group flex gap-x-2 justify-center items-center text-base font-bold text-black uppercase tracking-wide duration-300"
+              class="flex items-center justify-center px-32 py-16 text-base font-bold tracking-wide text-black uppercase duration-300 bg-canary-yellow group gap-x-2"
             >
               Available Cars
               <span>
@@ -256,7 +258,7 @@
                   viewBox="0 0 24 24"
                   stroke-width="2"
                   stroke="currentColor"
-                  class="size-6 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10 duration-200"
+                  class="duration-200 size-6 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10"
                 >
                   <path
                     stroke-linecap="round"
@@ -267,10 +269,10 @@
               </span>
             </a>
 
-            <div class="flex gap-x-2 items-center">
+            <div class="flex items-center gap-x-2">
               <a
                 href="/sign_in.html"
-                class="group flex gap-x-2 items-center hover:text-canary-yellow text-base font-bold uppercase tracking-wide duration-300 my-text-shadow"
+                class="flex items-center text-base font-bold tracking-wide uppercase duration-300 group gap-x-2 hover:text-canary-yellow my-text-shadow"
               >
                 book a test drive
                 <span>
@@ -280,7 +282,7 @@
                     viewBox="0 0 24 24"
                     stroke-width="2"
                     stroke="currentColor"
-                    class="size-6 group-hover:text-canary-yellow group-hover:translate-x-10 duration-200"
+                    class="duration-200 size-6 group-hover:text-canary-yellow group-hover:translate-x-10"
                   >
                     <path
                       stroke-linecap="round"
@@ -299,22 +301,80 @@
     <!-- overview -->
     <section id="overview">
       <div
-        class="my-64 lg:max-w-5xl max-w-4xl text-center mx-auto mb-128 md:px-0 px-20"
+        class="max-w-5xl px-20 mx-auto my-64 text-center lg:max-w-6xl mb-128 md:px-0"
       >
         <div>
-          <h2 class="lg:text-4xl text-2xl mb-48 leading-snug tracking-wide">
+          <h2 class="mb-48 leading-snug tracking-wide text-canary-yellow">
             LOOKS LIKE AN SUV DRIVES LIKE A LOTUS
           </h2>
           <p
-            class="mb-32 md:text-md sm:text-base text-sm sm:leading-snug leading-loose"
+            class="mb-32 text-sm leading-loose md:text-md sm:text-base sm:leading-snug"
           >
             Assertive yet refined, the Eletre evolves classic Lotus design
             language with advanced active aerodynamics and breakthrough driving
             technologies.
           </p>
-          <p class="uppercase text-base tracking-wide">
+          <p class="text-base tracking-wide uppercase">
             A THRILLING NEW FUTURE STARTS HERE.
           </p>
+        </div>
+        <div
+          class="flex flex-col justify-between my-32 gap-y-32 md:my-44 md:flex-row"
+        >
+          <!-- 1st -->
+          <div class="flex flex-col items-center justify-center gap-16">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#fff"
+              class="fill-canary-yellow floating"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M215.79,118.17a8,8,0,0,0-5-5.66L153.18,90.9l14.66-73.33a8,8,0,0,0-13.69-7l-112,120a8,8,0,0,0,3,13l57.63,21.61L88.16,238.43a8,8,0,0,0,13.69,7l112-120A8,8,0,0,0,215.79,118.17ZM109.37,214l10.47-52.38a8,8,0,0,0-5-9.06L62,132.71l84.62-90.66L136.16,94.43a8,8,0,0,0,5,9.06l52.8,19.8Z"
+              ></path>
+            </svg>
+            <p class="text-sm tracking-wide uppercase">Charging time</p>
+
+            <p class="font-semibold text-md">10%-80% in 18 mins</p>
+          </div>
+          <!-- 2 -->
+          <div class="flex flex-col items-center justify-center gap-16">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#fff"
+              class="fill-canary-yellow floating"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M134.62,123.51a8,8,0,0,1,.81,7.46l-16,40A8,8,0,0,1,104.57,165l11.61-29H96a8,8,0,0,1-7.43-11l16-40A8,8,0,1,1,119.43,91l-11.61,29H128A8,8,0,0,1,134.62,123.51ZM248,86.63V168a24,24,0,0,1-48,0V128a8,8,0,0,0-8-8H176v88h16a8,8,0,0,1,0,16H32a8,8,0,0,1,0-16H48V56A24,24,0,0,1,72,32h80a24,24,0,0,1,24,24v48h16a24,24,0,0,1,24,24v40a8,8,0,0,0,16,0V86.63A8,8,0,0,0,229.66,81L210.34,61.66a8,8,0,0,1,11.32-11.32L241,69.66A23.85,23.85,0,0,1,248,86.63ZM160,208V56a8,8,0,0,0-8-8H72a8,8,0,0,0-8,8V208Z"
+              ></path>
+            </svg>
+            <p class="text-sm tracking-wide uppercase">Across Europe</p>
+
+            <p class="font-semibold text-md">600,000 charging stations</p>
+          </div>
+          <!-- 3 -->
+          <div class="flex flex-col items-center justify-center gap-16">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#fff"
+              class="fill-canary-yellow floating"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M185.33,114.21l29.14-27.42.17-.17a32,32,0,0,0-45.26-45.26c0,.06-.11.11-.17.17L141.79,70.67l-83-30.2a8,8,0,0,0-8.39,1.86l-24,24a8,8,0,0,0,1.22,12.31l63.89,42.59L76.69,136H56a8,8,0,0,0-5.65,2.34l-24,24A8,8,0,0,0,29,175.42l36.82,14.73,14.7,36.75.06.16a8,8,0,0,0,13.18,2.47l23.87-23.88A8,8,0,0,0,120,200V179.31l14.76-14.76,42.59,63.89a8,8,0,0,0,12.31,1.22l24-24a8,8,0,0,0,1.86-8.39Zm-.07,97.23-42.59-63.88A8,8,0,0,0,136.8,144c-.27,0-.53,0-.79,0a8,8,0,0,0-5.66,2.35l-24,24A8,8,0,0,0,104,176v20.69L90.93,209.76,79.43,181A8,8,0,0,0,75,176.57l-28.74-11.5L59.32,152H80a8,8,0,0,0,5.66-2.34l24-24a8,8,0,0,0-1.22-12.32L44.56,70.74l13.5-13.49,83.22,30.26a8,8,0,0,0,8.56-2L180.78,52.6A16,16,0,0,1,203.4,75.23l-32.87,30.93a8,8,0,0,0-2,8.56l30.26,83.22Z"
+              ></path>
+            </svg>
+            <p class="text-sm tracking-wide uppercase">In one charge</p>
+
+            <p class="font-semibold text-md">London to newcastle</p>
+          </div>
         </div>
         <!-- <div class="">
           <div>
@@ -327,12 +387,12 @@
     <!-- features -->
     <section id="features">
       <div
-        class="lg:max-w-13xl md:max-w-10xl lg:text-start text-center mx-auto md:mb-80 msm:mb-32 lg:px-0 px-20"
+        class="px-20 mx-auto text-center lg:max-w-13xl md:max-w-10xl lg:text-start md:mb-80 msm:mb-32 lg:px-0"
       >
         <div class="mb-80">
           <h2 class="text-canary-yellow">Unrivaled Performance</h2>
           <h3
-            class="leading-snug tracking-wider lg:text-xl sm:text-md text-base"
+            class="text-base leading-snug tracking-wider lg:text-xl sm:text-md"
           >
             Experience a masterpiece of
             <span class="text-canary-yellow">function and aerodynamics</span>
@@ -341,18 +401,18 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-2">
           <!-- ITEM 1 -->
-          <div class="w-full sm:scale-100 scale-110">
+          <div class="w-full scale-110 sm:scale-100">
             <video autoplay loop muted>
               <source src="/lotusMaterial/newvideos/800V.mp4" />
             </video>
           </div>
           <div
-            class="my-16 mb-80 lg:mb-0 lg:my-0 md:px-20 px-10 flex flex-col justify-center md:gap-y-24 gap-y-10 lg:items-start"
+            class="flex flex-col justify-center px-10 my-16 mb-80 lg:mb-0 lg:my-0 md:px-20 md:gap-y-24 gap-y-10 lg:items-start"
           >
-            <h4 class="tracking-wide sm:text-2xl text-lg">
+            <h4 class="text-lg tracking-wide sm:text-2xl">
               800V Arcthitecture
             </h4>
-            <p class="sm:text-base text-xs leading-relaxed">
+            <p class="text-xs leading-relaxed sm:text-base">
               Industry-leading EV architecture can top up 400km (250 miles) of
               range in just 20 minutes - with a maximum range of up to 600 km
               (373 miles)*
@@ -361,31 +421,31 @@
 
           <!-- ITEM 2 -->
           <div
-            class="my-16 mb-80 lg:mb-0 lg:my-0 md:px-20 px-10 flex flex-col justify-center md:gap-y-24 gap-y-10 lg:items-end lg:text-right"
+            class="flex flex-col justify-center px-10 my-16 mb-80 lg:mb-0 lg:my-0 md:px-20 md:gap-y-24 gap-y-10 lg:items-end lg:text-right"
           >
-            <h4 class="tracking-wide sm:text-2xl text-lg">Aerodynamics</h4>
-            <p class="sm:text-base text-xs leading-relaxed">
+            <h4 class="text-lg tracking-wide sm:text-2xl">Aerodynamics</h4>
+            <p class="text-xs leading-relaxed sm:text-base">
               The Evija-derived aerodynamics guide air over and through its body
               for extra downforce and speed.
             </p>
           </div>
-          <div class="w-full sm:scale-100 lg:row-auto row-start-3 scale-110">
+          <div class="w-full row-start-3 scale-110 sm:scale-100 lg:row-auto">
             <video autoplay loop muted>
               <source src="/lotusMaterial/newvideos/Aerodynamics.mp4" />
             </video>
           </div>
 
           <!-- ITEM 3 -->
-          <div class="w-full sm:scale-100 scale-110">
+          <div class="w-full scale-110 sm:scale-100">
             <video autoplay loop muted>
               <source src="/lotusMaterial/newvideos/Capacity.mp4" />
             </video>
           </div>
           <div
-            class="my-16 mb-80 lg:mb-0 lg:my-0 md:px-20 px-10 flex flex-col justify-center md:gap-y-24 gap-y-10 lg:items-start"
+            class="flex flex-col justify-center px-10 my-16 mb-80 lg:mb-0 lg:my-0 md:px-20 md:gap-y-24 gap-y-10 lg:items-start"
           >
-            <h4 class="tracking-wide sm:text-2xl text-lg">High Capacity</h4>
-            <p class="sm:text-base text-xs leading-relaxed">
+            <h4 class="text-lg tracking-wide sm:text-2xl">High Capacity</h4>
+            <p class="text-xs leading-relaxed sm:text-base">
               Enjoy enhanced charging at home or on the go with 22kW AC and
               350kW DC capability.
             </p>
@@ -393,15 +453,15 @@
 
           <!-- ITEM 4 -->
           <div
-            class="my-16 mb-80 lg:mb-0 lg:my-0 md:px-20 px-10 flex flex-col justify-center md:gap-y-24 gap-y-10 lg:items-end lg:text-right"
+            class="flex flex-col justify-center px-10 my-16 mb-80 lg:mb-0 lg:my-0 md:px-20 md:gap-y-24 gap-y-10 lg:items-end lg:text-right"
           >
-            <h4 class="tracking-wide sm:text-2xl text-lg">Charge Indicator</h4>
-            <p class="sm:text-base text-xs leading-relaxed">
+            <h4 class="text-lg tracking-wide sm:text-2xl">Charge Indicator</h4>
+            <p class="text-xs leading-relaxed sm:text-base">
               The rear light blade glows green with charging, indicating
               realtime battery levels.
             </p>
           </div>
-          <div class="w-full sm:scale-100 scale-110 lg:row-auto row-start-7">
+          <div class="w-full row-start-7 scale-110 sm:scale-100 lg:row-auto">
             <video autoplay loop muted>
               <source src="/lotusMaterial/newvideos/Charge Indicator.mp4" />
             </video>
@@ -412,26 +472,26 @@
     </section>
 
     <!-- slider -->
-    <section id="">
+    <section id="aerodynamics">
       <div
-        class="lg:max-w-13xl md:max-w-10xl text-center mx-auto md:mb-128 mb-80 lg:px-0 px-20"
+        class="px-20 mx-auto text-center lg:max-w-13xl md:max-w-10xl md:mb-128 mb-80 lg:px-0"
       >
         <div>
-          <h2 class="mx-auto max-w-5xl text-center text-canary-yellow">
+          <h2 class="max-w-5xl mx-auto text-center text-canary-yellow">
             NEXT-LEVEL AERODYNAMICS
           </h2>
         </div>
-        <div class="max-w-8xl mx-auto text-center">
-          <div class="item item-1 hidden">
-            <div class="w-full mb-48 relative">
+        <div class="mx-auto text-center max-w-8xl">
+          <div class="hidden item item-1">
+            <div class="relative w-full mb-48">
               <video autoplay loop muted>
                 <source src="/lotusMaterial/newvideos/spoiler.mp4" />
               </video>
               <div
-                class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-48 lg:translate-x-96 group right-chev"
+                class="absolute right-0 translate-x-48 -translate-y-1/2 top-1/2 lg:translate-x-96 group right-chev"
               >
                 <button
-                  class="btn-f-right duration-500 group-hover:bg-canary-yellow border-2 border-canary-yellow lg:p-10 p-0"
+                  class="p-0 duration-500 border-2 btn-f-right group-hover:bg-canary-yellow border-canary-yellow lg:p-10"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -449,12 +509,12 @@
               </div>
             </div>
             <div
-              class="my-16 mb-48 lg:mb-0 lg:my-0 md:px-20 px-10 flex flex-col justify-center md:gap-y-24 gap-y-10"
+              class="flex flex-col justify-center px-10 my-16 mb-48 lg:mb-0 lg:my-0 md:px-20 md:gap-y-24 gap-y-10"
             >
-              <h4 class="tracking-wide sm:text-2xl text-lg">
+              <h4 class="text-lg tracking-wide sm:text-2xl">
                 deployable spoiler
               </h4>
-              <p class="sm:text-base text-xs leading-relaxed">
+              <p class="text-xs leading-relaxed sm:text-base">
                 The rear spoiler deploys when driven at high speed, and it can
                 generate up to 112.5 kg(5) of downforce for improved road
                 handling.
@@ -462,15 +522,15 @@
             </div>
           </div>
           <div class="item item-2">
-            <div class="w-full mb-48 relative">
+            <div class="relative w-full mb-48">
               <video autoplay loop muted>
                 <source src="/lotusMaterial/newvideos/carved_wing.mp4" />
               </video>
               <div
-                class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-48 lg:-translate-x-96 group left-chev"
+                class="absolute left-0 -translate-x-48 -translate-y-1/2 top-1/2 lg:-translate-x-96 group left-chev"
               >
                 <button
-                  class="btn-mid-left duration-500 group-hover:bg-canary-yellow border-2 border-canary-yellow lg:p-10 p-0"
+                  class="p-0 duration-500 border-2 btn-mid-left group-hover:bg-canary-yellow border-canary-yellow lg:p-10"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -488,10 +548,10 @@
               </div>
 
               <div
-                class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-48 lg:translate-x-96 group right-chev"
+                class="absolute right-0 translate-x-48 -translate-y-1/2 top-1/2 lg:translate-x-96 group right-chev"
               >
                 <button
-                  class="btn-mid-right duration-500 group-hover:bg-canary-yellow border-2 border-canary-yellow lg:p-10 p-0"
+                  class="p-0 duration-500 border-2 btn-mid-right group-hover:bg-canary-yellow border-canary-yellow lg:p-10"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -509,25 +569,25 @@
               </div>
             </div>
             <div
-              class="my-16 mb-48 lg:mb-0 lg:my-0 md:px-20 px-10 flex flex-col justify-center md:gap-y-24 gap-y-10"
+              class="flex flex-col justify-center px-10 my-16 mb-48 lg:mb-0 lg:my-0 md:px-20 md:gap-y-24 gap-y-10"
             >
-              <h4 class="tracking-wide sm:text-2xl text-lg">WING SPOILERS</h4>
-              <p class="sm:text-base text-xs leading-relaxed">
+              <h4 class="text-lg tracking-wide sm:text-2xl">WING SPOILERS</h4>
+              <p class="text-xs leading-relaxed sm:text-base">
                 Two curved blades direct air over the rear window to connect
                 with the deployable spoiler.
               </p>
             </div>
           </div>
-          <div class="item item-3 hidden">
-            <div class="w-full mb-48 relative">
+          <div class="hidden item item-3">
+            <div class="relative w-full mb-48">
               <video autoplay loop muted>
                 <source src="/lotusMaterial/newvideos/grille.mp4" />
               </video>
               <div
-                class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-48 lg:-translate-x-96 group left-chev"
+                class="absolute left-0 -translate-x-48 -translate-y-1/2 top-1/2 lg:-translate-x-96 group left-chev"
               >
                 <button
-                  class="btn-l-left duration-500 group-hover:bg-canary-yellow border-2 border-canary-yellow lg:p-10 p-0"
+                  class="p-0 duration-500 border-2 btn-l-left group-hover:bg-canary-yellow border-canary-yellow lg:p-10"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -545,10 +605,10 @@
               </div>
             </div>
             <div
-              class="my-16 mb-48 lg:mb-0 lg:my-0 md:px-20 px-10 flex flex-col justify-center md:gap-y-24 gap-y-10"
+              class="flex flex-col justify-center px-10 my-16 mb-48 lg:mb-0 lg:my-0 md:px-20 md:gap-y-24 gap-y-10"
             >
-              <h4 class="tracking-wide sm:text-2xl text-lg">ACTIVE GRILL</h4>
-              <p class="sm:text-base text-xs leading-relaxed">
+              <h4 class="text-lg tracking-wide sm:text-2xl">ACTIVE GRILL</h4>
+              <p class="text-xs leading-relaxed sm:text-base">
                 The honeycomb grille shutters automatically open to cool the
                 motor and close to extend driving range(3).
               </p>
@@ -560,10 +620,10 @@
 
     <!-- Available Cars -->
     <section id="available-cars">
-      <div class="max-w-12xl mx-auto md:mb-128 mb-80 px-20">
-        <div class="md:max-w-7xl max-w-5xl mx-auto">
+      <div class="px-20 mx-auto max-w-12xl md:mb-128 mb-80">
+        <div class="max-w-5xl mx-auto md:max-w-7xl">
           <h2 class="text-center text-canary-yellow">Available cars</h2>
-          <p class="sm:text-sm text-xs text-center leading-relaxed">
+          <p class="text-xs leading-relaxed text-center sm:text-sm">
             Discover our range of pre-configured Eletre, featuring expertly
             selected options, configured by our product specialists. Browse the
             collection, find your perfect match, and start driving in just 4-6
@@ -573,48 +633,48 @@
 
         <!-- Card contianer -->
         <div
-          class="grid justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-32 gap-x-32 gap-y-32"
+          class="grid grid-cols-1 my-32 justify-items-center md:grid-cols-2 lg:grid-cols-3 gap-x-32 gap-y-32"
         >
           <!-- card-1 -->
           <div class="bg-canary-yellow">
             <div
-              class="-translate-x-10 -translate-y-10 hover:translate-x-0 hover:translate-y-0 duration-150 max-w-2xl border group border-canary-yellow bg-black"
+              class="max-w-2xl duration-150 -translate-x-10 -translate-y-10 bg-black border hover:translate-x-0 hover:translate-y-0 group border-canary-yellow"
             >
               <div class="overflow-hidden">
                 <img
-                  class="group-hover:scale-110 group-hover:animate-pulse duration-200"
+                  class="duration-200 group-hover:scale-110 group-hover:animate-pulse"
                   src="/lotusMaterial/images/lotus_emira.jpg"
                 />
               </div>
               <div class="p-10">
                 <h4
-                  class="text-xl pb-24 tracking-wider text-canary-yellow text-center"
+                  class="pb-24 text-xl tracking-wider text-center text-canary-yellow"
                 >
                   EMIRA
                 </h4>
                 <div
-                  class="pb-24 grid grid-cols-2 gap-y-10 justify-items-center"
+                  class="grid grid-cols-2 pb-24 gap-y-10 justify-items-center"
                 >
-                  <div class="flex flex-col justify-center items-center">
+                  <div class="flex flex-col items-center justify-center">
                     <p class="text-lg text-canary-yellow">275</p>
                     <p class="text-xs">km/h top speed</p>
                   </div>
-                  <div class="flex flex-col justify-center items-center">
+                  <div class="flex flex-col items-center justify-center">
                     <p class="text-lg text-canary-yellow">4.4 sec</p>
                     <p class="text-xs">sec 0-100 km/h</p>
                   </div>
-                  <div class="flex flex-col justify-center items-center">
+                  <div class="flex flex-col items-center justify-center">
                     <p class="text-lg text-canary-yellow">365</p>
                     <p class="text-xs">hp Power</p>
                   </div>
-                  <div class="flex flex-col justify-center items-center">
+                  <div class="flex flex-col items-center justify-center">
                     <p class="text-lg text-canary-yellow">430</p>
                     <p class="text-xs">Nm Torque</p>
                   </div>
                 </div>
-                <div class="py-16 flex flex-col gap-y-16">
+                <div class="flex flex-col py-16 gap-y-16">
                   <div>
-                    <p class="text-sm flex items-center gap-1">
+                    <p class="flex items-center gap-1 text-sm">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -638,7 +698,7 @@
                     </p>
                   </div>
                   <div>
-                    <p class="text-sm flex items-center gap-1">
+                    <p class="flex items-center gap-1 text-sm">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -657,7 +717,7 @@
                     </p>
                   </div>
                   <div>
-                    <p class="text-sm flex items-center gap-1">
+                    <p class="flex items-center gap-1 text-sm">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -677,8 +737,8 @@
                     </p>
                   </div>
                 </div>
-                <div class="flex justify-between items-center">
-                  <h4 class="text-xl ml-10 text-canary-yellow">£84,300</h4>
+                <div class="flex items-center justify-between">
+                  <h4 class="ml-10 text-xl text-canary-yellow">£84,300</h4>
                   <a href="/emira.html" class="card-link"> view details </a>
                 </div>
               </div>
@@ -688,43 +748,43 @@
           <!-- card-2 -->
           <div class="bg-canary-yellow">
             <div
-              class="-translate-x-10 -translate-y-10 hover:translate-x-0 hover:translate-y-0 duration-150 max-w-2xl border group border-canary-yellow bg-black"
+              class="max-w-2xl duration-150 -translate-x-10 -translate-y-10 bg-black border hover:translate-x-0 hover:translate-y-0 group border-canary-yellow"
             >
               <div class="overflow-hidden">
                 <img
-                  class="group-hover:scale-110 group-hover:animate-pulse duration-200"
+                  class="duration-200 group-hover:scale-110 group-hover:animate-pulse"
                   src="/lotusMaterial/images/lotus_evija.jpg"
                 />
               </div>
               <div class="p-10">
                 <h4
-                  class="text-xl pb-24 tracking-wider text-canary-yellow text-center"
+                  class="pb-24 text-xl tracking-wider text-center text-canary-yellow"
                 >
                   evija
                 </h4>
                 <div
-                  class="pb-24 grid grid-cols-2 gap-y-10 justify-items-center"
+                  class="grid grid-cols-2 pb-24 gap-y-10 justify-items-center"
                 >
-                  <div class="flex flex-col justify-center items-center">
+                  <div class="flex flex-col items-center justify-center">
                     <p class="text-lg text-canary-yellow">350</p>
                     <p class="text-xs">km/h top speed</p>
                   </div>
-                  <div class="flex flex-col justify-center items-center">
+                  <div class="flex flex-col items-center justify-center">
                     <p class="text-lg text-canary-yellow">2.9 sec</p>
                     <p class="text-xs">sec 0-100 km/h</p>
                   </div>
-                  <div class="flex flex-col justify-center items-center">
+                  <div class="flex flex-col items-center justify-center">
                     <p class="text-lg text-canary-yellow">2011</p>
                     <p class="text-xs">hp Power</p>
                   </div>
-                  <div class="flex flex-col justify-center items-center">
+                  <div class="flex flex-col items-center justify-center">
                     <p class="text-lg text-canary-yellow">1704</p>
                     <p class="text-xs">Nm Torque</p>
                   </div>
                 </div>
-                <div class="py-16 flex flex-col gap-y-16">
+                <div class="flex flex-col py-16 gap-y-16">
                   <div>
-                    <p class="text-sm flex items-center gap-1">
+                    <p class="flex items-center gap-1 text-sm">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -748,7 +808,7 @@
                     </p>
                   </div>
                   <div>
-                    <p class="text-sm flex items-center gap-1">
+                    <p class="flex items-center gap-1 text-sm">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -767,7 +827,7 @@
                     </p>
                   </div>
                   <div>
-                    <p class="text-sm flex items-center gap-1">
+                    <p class="flex items-center gap-1 text-sm">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -787,8 +847,8 @@
                     </p>
                   </div>
                 </div>
-                <div class="flex justify-between items-center">
-                  <h4 class="text-xl ml-10 text-canary-yellow">£210,000</h4>
+                <div class="flex items-center justify-between">
+                  <h4 class="ml-10 text-xl text-canary-yellow">£210,000</h4>
                   <a href="/evija.html" class="card-link"> view details </a>
                 </div>
               </div>
@@ -798,43 +858,43 @@
           <!-- card-3 -->
           <div class="bg-canary-yellow">
             <div
-              class="-translate-x-10 -translate-y-10 hover:translate-x-0 hover:translate-y-0 duration-150 max-w-2xl border group border-canary-yellow bg-black"
+              class="max-w-2xl duration-150 -translate-x-10 -translate-y-10 bg-black border hover:translate-x-0 hover:translate-y-0 group border-canary-yellow"
             >
               <div class="overflow-hidden">
                 <img
-                  class="group-hover:scale-110 group-hover:animate-pulse duration-200"
+                  class="duration-200 group-hover:scale-110 group-hover:animate-pulse"
                   src="/lotusMaterial/images/lotus_emeya.jpg"
                 />
               </div>
               <div class="p-10">
                 <h4
-                  class="text-xl pb-24 tracking-wider text-canary-yellow text-center"
+                  class="pb-24 text-xl tracking-wider text-center text-canary-yellow"
                 >
                   emeya
                 </h4>
                 <div
-                  class="pb-24 grid grid-cols-2 gap-y-10 justify-items-center"
+                  class="grid grid-cols-2 pb-24 gap-y-10 justify-items-center"
                 >
-                  <div class="flex flex-col justify-center items-center">
+                  <div class="flex flex-col items-center justify-center">
                     <p class="text-lg text-canary-yellow">250</p>
                     <p class="text-xs">km/h top speed</p>
                   </div>
-                  <div class="flex flex-col justify-center items-center">
+                  <div class="flex flex-col items-center justify-center">
                     <p class="text-lg text-canary-yellow">4.2 sec</p>
                     <p class="text-xs">sec 0-100 km/h</p>
                   </div>
-                  <div class="flex flex-col justify-center items-center">
+                  <div class="flex flex-col items-center justify-center">
                     <p class="text-lg text-canary-yellow">603</p>
                     <p class="text-xs">hp Power</p>
                   </div>
-                  <div class="flex flex-col justify-center items-center">
+                  <div class="flex flex-col items-center justify-center">
                     <p class="text-lg text-canary-yellow">710</p>
                     <p class="text-xs">Nm Torque</p>
                   </div>
                 </div>
-                <div class="py-16 flex flex-col gap-y-16">
+                <div class="flex flex-col py-16 gap-y-16">
                   <div>
-                    <p class="text-sm flex items-center gap-1">
+                    <p class="flex items-center gap-1 text-sm">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -858,7 +918,7 @@
                     </p>
                   </div>
                   <div>
-                    <p class="text-sm flex items-center gap-1">
+                    <p class="flex items-center gap-1 text-sm">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -877,7 +937,7 @@
                     </p>
                   </div>
                   <div>
-                    <p class="text-sm flex items-center gap-1">
+                    <p class="flex items-center gap-1 text-sm">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -897,8 +957,8 @@
                     </p>
                   </div>
                 </div>
-                <div class="flex justify-between items-center">
-                  <h4 class="text-xl ml-10 text-canary-yellow">£89,550</h4>
+                <div class="flex items-center justify-between">
+                  <h4 class="ml-10 text-xl text-canary-yellow">£89,550</h4>
                   <a href="/emeya.html" class="card-link"> view details </a>
                 </div>
               </div>
@@ -910,15 +970,15 @@
 
     <!-- INTERIOR -->
     <section id="updatedBG">
-      <div class="relative mb-32 max-w-13xl min-h-screen mx-auto">
+      <div class="relative min-h-screen mx-auto mb-32 max-w-13xl">
         <div
           class="absolute bottom-[1.6rem] msm:bottom-[10%] left-1/4 -translate-x-1/4"
         >
           <h2 class="text-left">BE AMONG FIRST TO OWN</h2>
-          <div class="w-full flex gap-y-32 flex-col msm:flex-row gap-x-32">
+          <div class="flex flex-col w-full gap-y-32 msm:flex-row gap-x-32">
             <a
               href="/sign_in.html"
-              class="px-32 py-16 bg-canary-yellow group flex gap-x-2 justify-center items-center text-base font-bold text-black uppercase tracking-wide duration-300"
+              class="flex items-center justify-center px-32 py-16 text-base font-bold tracking-wide text-black uppercase duration-300 bg-canary-yellow group gap-x-2"
             >
               Order yours
               <span>
@@ -928,7 +988,7 @@
                   viewBox="0 0 24 24"
                   stroke-width="2"
                   stroke="currentColor"
-                  class="size-6 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10 duration-200"
+                  class="duration-200 size-6 stroke-canary-yellow group-hover:stroke-black group-hover:translate-x-10"
                 >
                   <path
                     stroke-linecap="round"
@@ -939,10 +999,10 @@
               </span>
             </a>
 
-            <div class="flex gap-x-2 items-center">
+            <div class="flex items-center gap-x-2">
               <a
                 href="/sign_in.html"
-                class="group flex gap-x-2 items-center hover:text-canary-yellow text-base font-bold uppercase tracking-wide duration-300 my-text-shadow"
+                class="flex items-center text-base font-bold tracking-wide uppercase duration-300 group gap-x-2 hover:text-canary-yellow my-text-shadow"
               >
                 keep me updated
                 <span>
@@ -952,7 +1012,7 @@
                     viewBox="0 0 24 24"
                     stroke-width="2"
                     stroke="currentColor"
-                    class="size-6 group-hover:text-canary-yellow group-hover:translate-x-10 duration-200"
+                    class="duration-200 size-6 group-hover:text-canary-yellow group-hover:translate-x-10"
                   >
                     <path
                       stroke-linecap="round"
@@ -976,10 +1036,10 @@
     <!-- Footer -->
     <footer>
       <div
-        class="lg:max-w-13xl md:max-w-10xl lg:text-start mx-auto md:mb-80 msm:mb-32 px-20"
+        class="px-20 mx-auto lg:max-w-13xl md:max-w-10xl lg:text-start md:mb-80 msm:mb-32"
       >
         <!-- LOGO -->
-        <div class="mb-64 flex items-center justify-center">
+        <div class="flex items-center justify-center mb-64">
           <img class="w-64 h-64" src="/lotusMaterial/main-logo-removebg.png" />
         </div>
 
@@ -987,18 +1047,18 @@
         <div class="my-64 border-b-2 border-canary-yellow"></div>
 
         <!-- GRID -->
-        <div class="grid md:grid-cols-5 gap-x-16 gap-y-32 grid-cols-1">
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-x-16 gap-y-32">
           <div class="md:col-span-5 md:row-span-2">
-            <h2 class="sm:max-w-xl max-w-182 text-left text-canary-yellow">
+            <h2 class="text-left sm:max-w-xl max-w-182 text-canary-yellow">
               Stay in to know
             </h2>
-            <p class="text-sm mb-24">
+            <p class="mb-24 text-sm">
               Subscribe to Lotus Updates for the latest news, releases, and
               exclusive offers
             </p>
             <a
               href="/sign_in.html"
-              class="border border-canary-yellow text-md font-semibold px-24 p-10 bg-black text-canary-yellow hover:bg-canary-yellow hover:text-black duration-200"
+              class="p-10 px-24 font-semibold duration-200 bg-black border border-canary-yellow text-md text-canary-yellow hover:bg-canary-yellow hover:text-black"
             >
               KEEP ME INFORMED
             </a>
@@ -1008,13 +1068,13 @@
           <div class="md:col-start-3">
             <h5>MODELS</h5>
             <ul class="flex flex-col lg:gap-y-10 gap-y-4">
-              <li class="lg:text-base text-sm">
+              <li class="text-sm lg:text-base">
                 <a href="/emeya.html">Emeya</a>
               </li>
-              <li class="lg:text-base text-sm">
+              <li class="text-sm lg:text-base">
                 <a href="/emira.html">Emira</a>
               </li>
-              <li class="lg:text-base text-sm">
+              <li class="text-sm lg:text-base">
                 <a href="/evija.html">Evija</a>
               </li>
             </ul>
@@ -1023,26 +1083,26 @@
           <div class="">
             <h5>About Us</h5>
             <ul class="flex flex-col lg:gap-y-10 gap-y-4">
-              <li class="lg:text-base text-sm"><a>Lotus-Story</a></li>
-              <li class="lg:text-base text-sm"><a>Careers</a></li>
+              <li class="text-sm lg:text-base"><a>Lotus-Story</a></li>
+              <li class="text-sm lg:text-base"><a>Careers</a></li>
             </ul>
           </div>
           <!-- Fourth Item -->
           <div class="">
             <h5>Services</h5>
             <ul class="flex flex-col lg:gap-y-10 gap-y-4">
-              <li class="lg:text-base text-sm"><a>Contact us</a></li>
-              <li class="lg:text-base text-sm"><a>Investor Realtions</a></li>
+              <li class="text-sm lg:text-base"><a>Contact us</a></li>
+              <li class="text-sm lg:text-base"><a>Investor Realtions</a></li>
             </ul>
           </div>
 
           <!-- Fifth Item -->
-          <div class="md:col-start-1 row-start-5">
+          <div class="row-start-5 md:col-start-1">
             <div class="flex gap-x-24">
               <!-- twitter -->
               <div class="group">
                 <div
-                  class="group-hover:scale-110 duration-200 rounded-full border p-1 border-canary-yellow hover:animate-pulse"
+                  class="p-1 duration-200 border rounded-full group-hover:scale-110 border-canary-yellow hover:animate-pulse"
                 >
                   <a href="https://x.com/lotuscars" target="_blank">
                     <svg
@@ -1063,7 +1123,7 @@
               <!-- youtube -->
               <div class="group">
                 <div
-                  class="group-hover:scale-105 duration-200 rounded-full border p-1 border-canary-yellow hover:animate-pulse"
+                  class="p-1 duration-200 border rounded-full group-hover:scale-105 border-canary-yellow hover:animate-pulse"
                 >
                   <a href="https://www.youtube.com/grouplotus" target="_blank">
                     <svg
@@ -1084,7 +1144,7 @@
               <!-- instagram -->
               <div class="group">
                 <div
-                  class="group-hover:scale-105 duration-200 rounded-full border p-1 border-canary-yellow hover:animate-pulse"
+                  class="p-1 duration-200 border rounded-full group-hover:scale-105 border-canary-yellow hover:animate-pulse"
                 >
                   <a
                     href="https://www.instagram.com/lotuscars/"
@@ -1108,7 +1168,7 @@
               <!-- facebook -->
               <div class="group">
                 <div
-                  class="group-hover:scale-105 duration-200 rounded-full border p-1 border-canary-yellow hover:animate-pulse"
+                  class="p-1 duration-200 border rounded-full group-hover:scale-105 border-canary-yellow hover:animate-pulse"
                 >
                   <a href="https://www.facebook.com/LotusCars/" target="_blank">
                     <svg
@@ -1135,16 +1195,16 @@
 
         <!-- bottom -->
         <div
-          class="my-10 flex md:flex-row flex-col gap-y-10 justify-between text-left items-start"
+          class="flex flex-col items-start justify-between my-10 text-left md:flex-row gap-y-10"
         >
           <a
             href="#terms-container"
             id="btn-terms"
-            class="capitalize md:text-sm text-xs"
+            class="text-xs capitalize md:text-sm"
           >
             Terms & Conditions
           </a>
-          <button id="open-cookies" class="capitalize md:text-sm text-xs">
+          <button id="open-cookies" class="text-xs capitalize md:text-sm">
             Cookie Settings
           </button>
         </div>
@@ -1152,7 +1212,7 @@
 
       <div id="terms-container" class="hidden">
         <div
-          class="ld:p-64 p-48 flex lg:flex-row lg:justify-between flex-col gap-y-24 bg-white gap-x-24 text-gray-600 md:text-sm text-xs font-montserrat text-justify"
+          class="flex flex-col p-48 text-xs text-justify text-gray-600 bg-white ld:p-64 lg:flex-row lg:justify-between gap-y-24 gap-x-24 md:text-sm font-montserrat"
         >
           <div class="lg:w-1/2 lg:p-24">
             <p class="">
@@ -1165,19 +1225,8 @@
               no rights can be derived from them. The images show optional
               equipment.
             </p>
-            <p class="">
-              The vehicle specifications detailed on this page are target
-              specifications based on simulations. Some of the model features,
-              optional extras and colours shown may not be available, or may
-              only be available in a different specification. The specified fuel
-              consumption and emission data are determined in accordance with
-              the measurement procedures prescribed by law. 1 January 2022, the
-              WLTP test cycle completely replaced the NEDC test cycle and
-              therefore no NEDC values are available for new type approved
-              vehicles after that date.
-            </p>
           </div>
-          <div class="lg:w-1/2 lg:p-24 flex flex-col gap-y-10">
+          <div class="flex flex-col lg:w-1/2 lg:p-24 gap-y-10">
             <ol class="list-decimal">
               <li>
                 When connected to 350kW DC fast charger in optimal conditions.
@@ -1216,16 +1265,16 @@
     <!-- Cookie Container -->
     <div
       id="cookie-container"
-      class="sticky hidden shadow-xl bottom-10 max-w-4xl bg-white mx-auto p-16"
+      class="sticky max-w-4xl p-16 mx-auto bg-white shadow-xl bottom-10"
     >
       <div class="mx-10 lg:mx-0">
-        <div class="flex lg:flex-row justify-between flex-col">
+        <div class="flex flex-col justify-between lg:flex-row">
           <p class="lg:max-w-xl text-[1rem] text-gray-400">
             By clicking “Accept All Cookies”, you agree to the storing of
             cookies on your device to enhance site navigation, analyze site
             usage, and assist in our marketing efforts.
           </p>
-          <div class="lg:p-0 p-16 flex flex-col gap-y-10">
+          <div class="flex flex-col p-16 lg:p-0 gap-y-10">
             <button
               id="btn-accept-cookie"
               class="lg:px-32 font-bold p-10 text-[1rem] text-center bg-canary-yellow text-black"
